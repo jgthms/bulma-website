@@ -1,0 +1,91 @@
+---
+layout: documentation
+doc-tab: layout
+doc-subtab: header
+---
+
+{% include subnav-layout.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Header</h1>
+    <h2 class="subtitle">
+      A responsive horizontal <strong>header</strong> that can contain links, tabs, buttons, icons, and a logo
+    </h2>
+
+    <hr>
+  </div>
+
+  <div class="example">
+    <header class="header">
+      <div class="container">
+        <div class="header-left">
+          <a class="header-logo" href="index.html">
+            <img src="{{ site.baseurl }}/images/bulma.png" alt="Logo">
+          </a>
+          <a class="header-tab" href="#">
+            Tab
+          </a>
+          <a class="header-tab is-active" href="#">
+            Active tab
+          </a>
+        </div>
+        <span class="header-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="header-right header-menu">
+          <span class="header-item">
+            <a href="#">Nav item</a>
+          </span>
+          <span class="header-item">
+            <a href="#">Other nav item</a>
+          </span>
+          <span class="header-item">
+            <a class="button" href="#">Button</a>
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+
+{% highlight html %}
+<header class="header">
+  <div class="container">
+    <!-- Left side -->
+    <div class="header-left">
+      <a class="header-logo" href="#">
+        <img src="images/bulma.png" alt="Logo">
+      </a>
+      <a class="header-tab" href="#">
+        Tab
+      </a>
+      <a class="header-tab is-active" href="#">
+        Active tab
+      </a>
+    </div>
+
+    <!-- Hamburger menu (on mobile) -->
+    <span class="header-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <!-- Right side -->
+    <div class="header-right header-menu">
+      <span class="header-item">
+        <a href="#">Nav item</a>
+      </span>
+      <span class="header-item">
+        <a href="#">Other nav item</a>
+      </span>
+      <span class="header-item">
+        <a class="button" href="#">Button</a>
+      </span>
+    </div>
+  </div>
+</header>
+{% endhighlight %}
+</section>

@@ -1,0 +1,304 @@
+---
+layout: documentation
+doc-tab: elements
+doc-subtab: controls
+---
+
+{% include subnav-elements.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Form controls</h1>
+    <h2 class="subtitle">
+      All generic <strong>form controls</strong>, designed for consistency
+    </h2>
+
+    <hr>
+
+    <div class="content">
+      <p>The following form controls <strong>classes</strong> are supported:</p>
+      <ul>
+        <li><code>.input</code></li>
+        <li><code>.textarea</code></li>
+        <li><code>.select</code></li>
+        <li><code>.checkbox</code></li>
+        <li><code>.radio</code></li>
+        <li><code>.button</code></li>
+      </ul>
+      <p>When combining several controls in a <strong>form</strong>, use the <code>.control</code> class as a <strong>container</strong>, to keep the spacing consistent.</p>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <p class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </p>
+        <p class="control">
+          <span class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+        </p>
+        <p class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </p>
+        <p class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Remember me
+          </label>
+        </p>
+        <p class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </p>
+        <p class="control">
+          <button class="button is-primary">Submit</button>
+          <button class="button">Cancel</button>
+        </p>
+      </div>
+      <div class="column">
+{% highlight html %}
+<p class="control">
+  <input class="input" type="text" placeholder="Text input">
+</p>
+<p class="control">
+  <textarea class="textarea" placeholder="Textarea"></textarea>
+</p>
+<p class="control">
+  <label class="checkbox">
+    <input type="checkbox">
+    Remember me
+  </label>
+</p>
+<p class="control">
+  <label class="radio">
+    <input type="radio" name="question">
+    Yes
+  </label>
+  <label class="radio">
+    <input type="radio" name="question">
+    No
+  </label>
+</p>
+<p class="control">
+  <button class="button is-primary">Submit</button>
+  <button class="button">Cancel</button>
+</p>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">Sizes</h3>
+
+    <div class="columns">
+      <div class="column">
+        <p class="control">
+          <input class="input is-small" type="text" placeholder="Small input">
+        </p>
+        <p class="control">
+          <input class="input" type="text" placeholder="Normal input">
+        </p>
+        <p class="control">
+          <input class="input is-medium" type="text" placeholder="Medium input">
+        </p>
+        <p class="control">
+          <input class="input is-large" type="text" placeholder="Large input">
+        </p>
+      </div>
+      <div class="column">
+{% highlight html %}
+<p class="control">
+  <input class="input is-small" type="text" placeholder="Small input">
+</p>
+<p class="control">
+  <input class="input" type="text" placeholder="Normal input">
+</p>
+<p class="control">
+  <input class="input is-medium" type="text" placeholder="Medium input">
+</p>
+<p class="control">
+  <input class="input is-large" type="text" placeholder="Large input">
+</p>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">States</h3>
+    <h4 class="subtitle">Loading</h4>
+
+    <div class="columns">
+      <div class="column">
+        <p class="control is-loading">
+          <input class="input" type="text" placeholder="Loading input">
+        </p>
+        <p class="control is-loading">
+          <textarea class="textarea" placeholder="Loading textarea"></textarea>
+        </p>
+      </div>
+      <div class="column">
+{% highlight html %}
+<p class="control is-loading">
+  <input class="input" type="text" placeholder="Loading input">
+</p>
+<p class="control is-loading">
+  <textarea class="textarea" placeholder="Loading textarea"></textarea>
+</p>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h4 class="subtitle">Disabled</h4>
+
+    <div class="columns">
+      <div class="column">
+        <p class="control">
+          <input class="input" type="text" placeholder="Disabled input" disabled>
+        </p>
+        <p class="control">
+          <textarea class="textarea" placeholder="Disabled textarea" disabled></textarea>
+        </p>
+        <p class="control">
+          <label class="checkbox is-disabled">
+            <input type="checkbox" disabled>
+            Remember me
+          </label>
+        </p>
+        <p class="control">
+          <label class="radio is-disabled">
+            <input type="radio" name="question" disabled>
+            Yes
+          </label>
+          <label class="radio is-disabled">
+            <input type="radio" name="question" disabled>
+            No
+          </label>
+        </p>
+        <p class="control">
+          <button class="button is-primary" disabled>Submit</button>
+          <button class="button" disabled>Cancel</button>
+        </p>
+      </div>
+      <div class="column">
+{% highlight html %}
+<p class="control">
+  <input class="input" type="text" placeholder="Disabled input" disabled>
+</p>
+<p class="control">
+  <textarea class="textarea" placeholder="Disabled textarea" disabled></textarea>
+</p>
+<p class="control">
+  <label class="checkbox is-disabled">
+    <input type="checkbox" disabled>
+    Remember me
+  </label>
+</p>
+<p class="control">
+  <label class="radio is-disabled">
+    <input type="radio" name="question" disabled>
+    Yes
+  </label>
+  <label class="radio is-disabled">
+    <input type="radio" name="question" disabled>
+    No
+  </label>
+</p>
+<p class="control">
+  <button class="button is-primary" disabled>Submit</button>
+  <button class="button" disabled>Cancel</button>
+</p>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h4 class="subtitle">With Font Awesome icons</h4>
+
+    <div class="columns">
+      <div class="column">
+        <p class="control is-withicon">
+          <input class="input" type="email" placeholder="Email">
+          <i class="fa fa-envelope"></i>
+        </p>
+        <p class="control is-withicon">
+          <input class="input" type="password" placeholder="Password">
+          <i class="fa fa-lock"></i>
+        </p>
+        <p class="control">
+          <button class="button is-success">
+            Login
+          </button>
+        </p>
+      </div>
+      <div class="column">
+{% highlight html %}
+<p class="control is-withicon">
+  <input class="input" type="email" placeholder="Email">
+  <i class="fa fa-envelope"></i>
+</p>
+<p class="control is-withicon">
+  <input class="input" type="password" placeholder="Password">
+  <i class="fa fa-lock"></i>
+</p>
+<p class="control">
+  <button class="button is-success">
+    Login
+  </button>
+</p>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">Form addons</h3>
+    <div class="content">
+      <p>If you want to <strong>attach</strong> controls together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
+    </div>
+    <div class="example">
+      <p class="control is-grouped">
+        <input class="input" type="text" placeholder="Find a repository">
+        <a class="button is-info">
+          Search
+        </a>
+      </p>
+    </div>
+{% highlight html %}
+<p class="control is-grouped">
+  <input class="input" type="text" placeholder="Find a repository">
+  <a class="button is-info">
+    Search
+  </a>
+</p>
+{% endhighlight %}
+    <div class="content">
+      <p>You can attach inputs, buttons, and dropdowns.</p>
+    </div>
+    <div class="example">
+      <p class="control is-grouped">
+        <span class="select">
+          <select>
+            <option>$</option>
+            <option>£</option>
+            <option>€</option>
+          </select>
+        </span>
+        <input class="input" type="text" placeholder="Amount of money">
+        <a class="button is-success">
+          Transfer
+        </a>
+      </p>
+    </div>
+  </div>
+</section>

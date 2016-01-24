@@ -1,0 +1,215 @@
+---
+layout: documentation
+doc-tab: components
+doc-subtab: tabs
+---
+
+{% include subnav-components.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Tabs</h1>
+    <h2 class="subtitle">Simple responsive horizontal navigation <strong>tabs</strong>, with different styles</h2>
+
+    <hr>
+
+    <div class="content">
+      <p><strong>Tabs</strong> only require a <code>tabs</code> container and a <code>&lt;ul&gt;</code> list.<br>
+        The <strong>default</strong> tabs style has a single border at the bottom.</p>
+    </div>
+    <div class="example">
+      <div class="tabs">
+        <ul>
+          <li class="is-active">
+            <a>One</a>
+          </li>
+          <li>
+            <a>Two</a>
+          </li>
+          <li>
+            <a>Three</a>
+          </li>
+          <li>
+            <a>Four</a>
+          </li>
+          <li>
+            <a>Five</a>
+          </li>
+          <li>
+            <a>Six</a>
+          </li>
+          <li>
+            <a>Seven</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% highlight html %}
+<div class="tabs">
+  <ul>
+    <li class="is-active"><a>One</a></li>
+    <li><a>Two</a></li>
+    <li><a>Three</a></li>
+    <li><a>Four</a></li>
+    <li><a>Five</a></li>
+    <li><a>Six</a></li>
+    <li><a>Seven</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Modifiers</h3>
+    <div class="content">
+      If you want a more classic style with <strong>borders</strong>, just append the <code>is-boxed</code> modifier.
+    </div>
+    <div class="example">
+      <div class="tabs is-boxed">
+        <ul>
+          <li class="is-active">
+            <a>
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-google"></i>
+              Google
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% highlight html %}
+<div class="tabs is-boxed">
+  <ul>
+    <li class="is-active">
+      <a><i class="fa fa-github"></i> GitHub
+      </a>
+    </li>
+    <li>
+      <a><i class="fa fa-twitter"></i> Twitter
+    </a>
+    </li>
+    <li>
+      <a><i class="fa fa-facebook"></i> Facebook
+      </a>
+    </li>
+    <li>
+      <a><i class="fa fa-google"></i> Google
+      </a>
+    </li>
+  </ul>
+</div>
+{% endhighlight %}
+
+    <p class="content">
+      If you want <strong>mutually exclusive</strong> tabs (like radio buttons where clicking one deselects all other ones), use the <code>is-toggle</code> modifier.
+    </p>
+    <div class="example">
+      <div class="tabs is-toggle">
+        <ul>
+          <li class="is-active">
+            <a>
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-google"></i>
+              Google
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% highlight html %}
+<div class="tabs is-toggle">
+  <ul>
+    <li class="is-active">
+      <a><i class="fa fa-github"></i> GitHub</a>
+    </li>
+    <li>
+      <a><i class="fa fa-twitter"></i> Twitter</a>
+    </li>
+    <li>
+      <a><i class="fa fa-facebook"></i> Facebook</a>
+    </li>
+    <li>
+      <a><i class="fa fa-google"></i> Google</a>
+    </li>
+  </ul>
+</div>
+{% endhighlight %}
+
+    <p class="content">
+      If you want the tabs to take up the <strong>whole width</strong> available, use <code>is-fullwidth</code>.
+    </p>
+    <div class="example">
+      <div class="tabs is-fullwidth">
+        <ul>
+          <li>
+            <a>
+              <i class="fa fa-angle-left"></i>
+              Left
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-angle-up"></i>
+              Up
+            </a>
+          </li>
+          <li>
+            <a>
+              Right
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% highlight html %}
+<div class="tabs is-fullwidth">
+  <ul>
+    <li>
+      <a><i class="fa fa-angle-left"></i> Left</a>
+    </li>
+    <li>
+      <a><i class="fa fa-angle-up"></i> Up</a>
+    </li>
+    <li>
+      <a>Right <i class="fa fa-angle-right"></i></a>
+    </li>
+  </ul>
+</div>
+{% endhighlight %}
+  </div>
+</section>

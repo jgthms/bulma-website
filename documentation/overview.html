@@ -1,0 +1,111 @@
+---
+layout: documentation
+doc-tab: overview
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Quick start</h1>
+    <h2 class="subtitle">Use Bulma within 2 minutes</h2>
+
+    <hr>
+
+    <article class="media is-large">
+      <div class="media-number">1</div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Download</strong> the CSS files:<br>
+          <a href="{{ site.download }}">{{ site.download }}</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-number">2</div>
+      <div class="media-content">
+        <p class="title is-5"><strong>Include</strong> the file (minified or expanded) in the <code>&lt;head&gt;</code></p>
+{% highlight html %}
+<link rel="stylesheet" href="bulma.css">
+{% endhighlight %}
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-number">3</div>
+      <div class="media-content">
+        <p class="title is-5"><em>Optional:</em> include <a href="fortawesome.github.io/Font-Awesome/">Font Awesome</a> to display the icons</p>
+{% highlight html %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+{% endhighlight %}
+      </div>
+    </article>
+
+    <hr>
+
+    <h3 class="title">Customizing with Sass</h3>
+
+    <div class="content">
+      <p>If you're familiar with <a href="http://sass-lang.com/">Sass</a> and want to <strong>customize</strong> Bulma with your own colors and variables, just install Bulma via <strong>Bower</strong>:</p>
+    </div>
+
+    <article class="media is-large">
+      <div class="media-number">1</div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Install</strong> using your command line:<br>
+{% highlight bash %}
+bower install bulma
+{% endhighlight %}
+        </p>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-number">2</div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Import</strong> all folders individually:<br>
+{% highlight sass %}
+@import bulma/utilities/utilities
+@import bulma/config/variables
+@import bulma/config/generated-variables
+@import bulma/base/base
+@import bulma/elements/elements
+@import bulma/components/components
+@import bulma/layout/layout
+{% endhighlight %}
+        </p>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-number">3</div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Customize</strong> the Bulma variables:<br>
+{% highlight sass %}
+@import bulma/config/variables
+
+// Override variables here
+// You can add new ones or update existing ones:
+
+$blue: #72d0eb // Update blue
+$pink: #ffb3b3 // Add pink
+$family-serif: "Georgia", serif // Add a serif family
+
+
+
+@import bulma/config/generated-variables
+
+// Override generated variables here
+// For example, by default, the $danger color is $red and the font is sans-serif
+// You can change these values:
+
+$danger: $orange // Use the existing orange
+$family-primary: $family-serif // Use the new serif family
+{% endhighlight %}
+        </p>
+      </div>
+    </article>
+  </div>
+</section>

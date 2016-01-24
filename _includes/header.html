@@ -1,0 +1,39 @@
+<header class="header">
+  <div class="container">
+    <div class="header-left">
+      <a class="header-logo" href="{{ site.baseurl }}/">
+        {% if page.route == 'index' %}
+          <img src="{{ site.baseurl }}/images/bulma.png" alt="{{ site.title }}">
+        {% else %}
+          <img src="{{ site.baseurl }}/images/bulma-white.png" alt="{{ site.title }}">
+        {% endif %}
+      </a>
+    </div>
+    <span id="header-toggle" class="header-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div id="header-menu" class="header-right header-menu">
+      <span class="header-item">
+        <a {% if page.route == 'index' %}class="is-active"{% endif %} href="{{ site.baseurl }}/">Home</a>
+      </span>
+      <span class="header-item">
+        <a {% if page.route == 'documentation' %}class="is-active"{% endif %} href="{{ site.baseurl }}/documentation/overview/">Documentation</a>
+      </span>
+      <span class="header-item">
+        {% if page.route == 'index' %}
+          <a class="button is-primary is-outlined" href="{{ site.download }}">
+            <i class="fa fa-github"></i>
+            Download
+          </a>
+        {% else %}
+          <a class="button is-info is-outlined is-inverted" href="{{ site.download }}">
+            <i class="fa fa-github"></i>
+            Download
+          </a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+</header>

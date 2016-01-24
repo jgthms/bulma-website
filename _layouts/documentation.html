@@ -1,0 +1,45 @@
+---
+layout: default
+route: documentation
+---
+
+<section class="hero is-info is-left is-bold">
+  {% include header.html %}
+  <div class="container">
+    <p class="title">
+      Documentation
+    </p>
+    <p class="subtitle">
+      Everything you need to <strong>create a website</strong> with Bulma
+    </p>
+  </div>
+  <div class="tabs is-boxed">
+    <div class="container">
+      <ul>
+        <li {% if page.doc-tab == 'overview' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/overview/">Overview</a>
+        </li>
+        <li {% if page.doc-tab == 'modifiers' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/modifiers/">Modifiers</a>
+        </li>
+        <li {% if page.doc-tab == 'grid' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/grid/">Grid</a>
+        </li>
+        <li {% if page.doc-tab == 'navbar' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/navbar/">Navbar</a>
+        </li>
+        <li {% if page.doc-tab == 'elements' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/elements/buttons/">Elements</a>
+        </li>
+        <li {% if page.doc-tab == 'components' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/components/tabs/">Components</a>
+        </li>
+        <li {% if page.doc-tab == 'layout' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/documentation/layout/header/">Layout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{ content }}

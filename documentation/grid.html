@@ -1,0 +1,344 @@
+---
+layout: documentation
+doc-tab: grid
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Grid</h1>
+    <h2 class="subtitle">A simple way to build columns</h2>
+    <hr>
+    <div class="content">
+      <p>To build a <strong>grid</strong>, just:</p>
+      <ol>
+        <li>Add a <code>columns</code> container</li>
+        <li>Add as many <code>column</code> elements as you want</li>
+      </ol>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <p class="notification is-info">First column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">Second column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Third column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">Fourth column</p>
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="columns">
+  <div class="column">
+    First column
+  </div>
+  <div class="column">
+    Second column
+  </div>
+  <div class="column">
+    Third column
+  </div>
+  <div class="column">
+    Fourth column
+  </div>
+</div>
+{% endhighlight %}
+
+  <hr>
+
+    <h3 class="title">Sizes</h3>
+    <div class="content">
+      <p>If you want to change the <strong>size</strong> of a single column, you can use one the following classes:</p>
+      <ul>
+        <li>
+          <code>is-half</code>
+        </li>
+        <li>
+          <code>is-third</code>
+        </li>
+        <li>
+          <code>is-quarter</code>
+        </li>
+      </ul>
+      <p>The <em>other</em> columns will fill up the <strong>remaining</strong> space automatically.</p>
+    </div>
+    <div class="columns">
+      <div class="column is-half">
+        <p class="notification is-info">
+          <code class="html">is-half</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Auto</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">Auto</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-third">
+        <p class="notification is-info">
+          <code class="html">is-third</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">Auto</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Auto</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-quarter">
+        <p class="notification is-info">
+          <code class="html">is-quarter</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">Auto</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">12 columns</h3>
+    <div class="content">
+      <p>As the grid can be divided into <strong>12</strong> columns, there are size classes for each division:</p>
+      <ul>
+        <li><code>is-2</code></li>
+        <li><code>is-3</code></li>
+        <li><code>is-4</code></li>
+        <li><code>is-5</code></li>
+        <li><code>is-6</code></li>
+        <li><code>is-7</code></li>
+        <li><code>is-8</code></li>
+        <li><code>is-9</code></li>
+        <li><code>is-10</code></li>
+        <li><code>is-11</code></li>
+      </ul>
+    </div>
+    <div class="message is-danger">
+      <p class="message-header">Naming</p>
+      <p class="message-body">Each modifier class is named after <strong>how many columns you want out of 12</strong>. So if you want 7 columns out of 12, use <code>is-7</code>.</p>
+    </div>
+
+    <div class="columns">
+      <div class="column is-2">
+        <p class="notification is-info"><code>is-2</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-3">
+        <p class="notification is-info"><code>is-3</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-4">
+        <p class="notification is-info"><code>is-4</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-5">
+        <p class="notification is-info"><code>is-5</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-6">
+        <p class="notification is-info"><code>is-6</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-7">
+        <p class="notification is-info"><code>is-7</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-8">
+        <p class="notification is-info"><code>is-8</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-9">
+        <p class="notification is-info"><code>is-9</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-10">
+        <p class="notification is-info"><code>is-10</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success is-centered">1</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-11">
+        <p class="notification is-info"><code>is-11</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning is-centered">1</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,82 @@
+---
+---
+
+@charset "utf-8"
+
+@import bulma/bulma
+
+#b
+  border-radius: 20px
+  box-shadow: 0 20px 60px rgba(black, 0.05), 0 5px 10px rgba(black, 0.1), 0 1px 1px rgba(black, 0.2)
+  display: inline-block
+  height: 240px
+  margin-bottom: 40px
+  vertical-align: top
+  width: 240px
+  +mobile
+    border-radius: 10px
+    height: 120px
+    width: 120px
+
+#bower
+  background: none
+  margin: -10px 0 20px
+  code
+    border-radius: $radius
+    color: $link
+    display: inline-block
+    font-size: 16px
+    padding: 16px 32px
+
+#grid
+  .notification
+    padding-left: 0
+    padding-right: 0
+
+#message
+  display: none
+
+.example
+  border: 1px solid $warning
+  border-top-right-radius: $radius
+  color: $warning-invert
+  padding: 15px 20px
+  position: relative
+  &:not(:first-child)
+    margin-top: 30px
+  &:not(:last-child)
+    margin-bottom: 20px
+  &:before
+    background: $warning
+    border-radius: $radius $radius 0 0
+    bottom: 100%
+    content: "Example"
+    display: inline-block
+    font-size: 7px
+    font-weight: bold
+    left: -1px
+    letter-spacing: 1px
+    padding: 3px 5px
+    position: absolute
+    text-transform: uppercase
+    vertical-align: top
+  & + .highlight
+    border: 1px solid $warning
+    border-radius: 0 0 $radius $radius
+    border-top: none
+    margin-top: -20px
+    &:not(:last-child)
+      margin-bottom: 40px
+  +tablet
+    &.is-fullwidth
+      border-left: none
+      border-right: none
+      padding: 0
+
++tablet
+  .section > .example:not(.is-fullwidth)
+    margin-left: 20px
+    margin-right: 20px
+    & + .highlight
+      margin-left: 20px
+      margin-right: 20px

@@ -1,0 +1,15 @@
+{
+  "name": "bulma",
+  "homepage": "https://github.com/jgthms/bulma",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "5384d1531f4787466da57d0035452566fd0fdd75"
+  },
+  "_source": "git://github.com/jgthms/bulma.git",
+  "_target": "~0.0.1",
+  "_originalSource": "bulma",
+  "_direct": true
+}

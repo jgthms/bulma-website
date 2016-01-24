@@ -1,0 +1,397 @@
+---
+layout: default
+route: index
+---
+
+<section class="hero is-medium">
+  {% include header.html %}
+  <div class="container">
+    <p id="b">
+      <img src="{{ site.baseurl }}/images/b.png" alt="{{ site.title }}">
+    </p>
+    <h1 class="title">
+      Bulma
+    </h1>
+    <h2 class="subtitle">
+      A <strong>modern</strong> CSS framework based on <strong>Flexbox</strong>
+    </h2>
+    <pre id="bower"><code>bower install bulma</code></pre>
+    <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+    <p class="hero-buttons">
+      <a class="button is-primary is-large is-flexible" href="{{ site.download }}">
+        <i class="fa fa-download"></i>
+        Download
+        <small>v0.0.1 Alpha</small>
+      </a>
+      <a class="button is-primary is-outlined is-large" href="{{ site.baseurl }}/documentation/overview/">
+        View docs
+      </a>
+    </p>
+  </div>
+</section>
+
+<section class="hero is-primary is-bold">
+  <div class="container">
+    <nav class="columns">
+      <div class="column is-centered">
+        <span class="icon is-large" style="margin-right: -15px;">
+          <i class="fa fa-mobile"></i>
+        </span>
+        <span class="icon is-large">
+          <i class="fa fa-tablet"></i>
+        </span>
+        <span class="icon is-large" style="margin-right: 10px;">
+          <i class="fa fa-desktop"></i>
+        </span>
+        <p class="title is-4"><strong>Responsive</strong> design</p>
+      </div>
+      <div class="column is-centered">
+        <span class="icon is-large">
+          <i class="fa fa-css3"></i>
+        </span>
+        <p class="title is-4">Built with <strong>Flexbox</strong></p>
+      </div>
+      <div class="column is-centered">
+        <span class="icon is-large">
+          <i class="fa fa-github"></i>
+        </span>
+        <p class="title is-4">Open source on <strong><a href="{{ site.github }}">GitHub</a></strong></p>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">Simple <strong>grid</strong> system</h3>
+    <h4 class="subtitle is-4">Just add columns, they will resize themselves</h4>
+    <div id="grid" class="columns">
+      <div class="column">
+        <div class="notification is-primary is-centered">
+          <p class="title">1</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification is-info is-centered">
+          <p class="title">2</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification is-success is-centered">
+          <p class="title">3</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification is-warning is-centered">
+          <p class="title">4</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification is-danger is-centered">
+          <p class="title">5</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-primary is-centered">
+          <p class="title">6</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-info is-centered">
+          <p class="title">7</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-success is-centered">
+          <p class="title">8</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-warning is-centered">
+          <p class="title">9</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-danger is-centered">
+          <p class="title">10</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-primary is-centered">
+          <p class="title">11</p>
+        </div>
+      </div>
+      <div class="column" style="display: none;">
+        <div class="notification is-info is-centered">
+          <p class="title">12</p>
+        </div>
+      </div>
+    </div>
+    <p class="control is-grouped is-centered">
+      <a id="add" class="button is-unselectable">Add column</a>
+      <a id="remove" class="button is-unselectable">Remove column</a>
+    </p>
+    <div id="message" class="message is-info">
+      <p class="message-header">Info</p>
+      <p class="message-body">While it's possible to add as many columns as you want, it is recommend to stick with <strong>12 columns</strong>.<br>
+      If you want smaller divisions, you can always <strong>nest</strong> columns.</p>
+    </div>
+    <div id="markup">
+{% highlight html %}
+<div class="columns">
+  <div class="column">1</div>
+  <div class="column">2</div>
+  <div class="column">3</div>
+  <div class="column">4</div>
+  <div class="column">5</div>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">Flexible <strong>navbar</strong></h3>
+    <h4 class="subtitle is-4">Include any type of element, they will remain vertically aligned</h4>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="navbar-item">
+          <p class="title is-4">
+            <strong>123</strong> posts
+          </p>
+        </div>
+        <p class="navbar-item">
+          <a class="button is-success">
+            New
+          </a>
+        </p>
+        <div class="navbar-item">
+          <p class="control is-grouped">
+            <input class="input" type="text" placeholder="Filter">
+            <button class="button">
+              Search
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-item">
+          Show:
+        </div>
+        <p class="navbar-item">
+          <strong>All</strong>
+        </p>
+        <p class="navbar-item">
+          <a href="#">Published</a>
+        </p>
+        <p class="navbar-item">
+          <a href="#">Drafts</a>
+        </p>
+        <div class="navbar-item">
+          Sort:
+        </div>
+        <div class="navbar-item">
+          <span class="select">
+            <select>
+              <option>Date created</option>
+            </select>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h3 class="title is-2">Quickly alter styles with <strong>modifier</strong> classes</h3>
+        <h4 class="subtitle is-4">Add and combine <code>is-*</code> CSS classes to compose your element</h4>
+      </div>
+      <div class="column">
+        <div class="block">
+          <p class="control">
+            <code>button</code>
+          </p>
+          <a class="button">Button</a>
+        </div>
+        <div class="block">
+          <p class="control">
+            <code>button is-primary</code>
+          </p>
+          <a class="button is-primary">Button</a>
+        </div>
+        <div class="block">
+          <p class="control">
+            <code>button is-primary is-large</code>
+          </p>
+          <a class="button is-primary is-large">Button</a>
+        </div>
+        <div class="block">
+          <p class="control">
+            <code>button is-primary is-large is-loading</code>
+          </p>
+          <a class="button is-primary is-large is-loading">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">And all the usual <strong>elements</strong></h3>
+    <h4 class="subtitle is-4">Buttons, form controls, menus, tabs, titles, notifications, etc.</h4>
+
+    <div class="columns">
+      <div class="column is-third">
+        <p class="control">
+          <input class="input is-inline" type="text" placeholder="Text input">
+        </p>
+        <p class="control">
+          <span class="select">
+            <select>
+              <option>Dropdown</option>
+            </select>
+          </span>
+        </p>
+        <p class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Checkbox
+          </label>
+        </p>
+        <p class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Radio
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            Buttons
+          </label>
+        </p>
+        <p class="control">
+          <button class="button is-primary">Button</button>
+        </p>
+        <div class="card">
+          <figure class="card-image is-4x3">
+            <img src="http://placehold.it/300x225" alt="">
+          </figure>
+          <div class="card-content">
+            <div class="media">
+              <figure class="media-image is-40">
+                <img src="http://placehold.it/40x40" alt="Image">
+              </figure>
+              <div class="media-content">
+                <p class="title is-5">Card</p>
+                <p class="subtitle is-6">Subtitle</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <small>11:09 PM - 1 Jan 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <p class="title">Title</p>
+        <p class="subtitle">Subtitle</p>
+        <div class="tabs is-boxed is-fullwidth">
+          <ul>
+            <li class="is-active">
+              <a>
+                <i class="fa fa-inbox"></i>
+                Inbox
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-comments-o"></i>
+                Comments
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa fa-cog"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block">
+          <span class="tag is-dark">Tag<span class="delete"></span></span>
+          <span class="tag is-info">Two<span class="delete"></span></span>
+          <span class="tag is-danger">Three<span class="delete"></span></span>
+        </p>
+        <div class="message is-warning">
+          <div class="message-header">
+            Hello world
+          </div>
+          <div class="message-body">
+            Message
+          </div>
+        </div>
+        <div class="notification is-success">
+          <span class="delete"></span>
+          Success!
+        </div>
+        <article class="media">
+          <figure class="media-image">
+            <img src="http://placehold.it/60x60">
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Media Object</strong> <small>A few seconds ago</small>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              </p>
+            </div>
+            <nav class="navbar">
+              <div class="navbar-left">
+                <a class="navbar-item">
+                  <span class="icon is-small"><i class="fa fa-reply"></i></span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon is-small"><i class="fa fa-heart"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-info is-medium is-bold">
+  <div class="container">
+    <p class="title">Get started</p>
+    <div class="hero-buttons">
+      <a class="button is-info is-inverted is-large"href="{{ site.baseurl }}/documentation/overview/">
+        <i class="fa fa-book"></i>
+        Check the <strong>Docs</strong>
+      </a>
+      <a class="button is-info is-inverted is-outlined is-large" href="{{ site.github }}">
+        <i class="fa fa-github"></i>
+        Contribute
+      </a>
+    </div>
+  </div>
+</section>
