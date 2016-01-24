@@ -1,0 +1,43 @@
+---
+title: Login template
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <section class="hero is-alt is-fullheight">
+      <div class="hero-content">
+        <div class="container">
+          <article class="card is-rounded">
+            <div class="card-content">
+              <h1 class="title">
+                <img src="{{ site.baseurl }}/images/bulma.png" alt="{{ site.title }}" width="114">
+              </h1>
+              <p class="control is-withicon">
+                <input class="input" type="email" placeholder="Email">
+                <i class="fa fa-envelope"></i>
+              </p>
+              <p class="control is-withicon">
+                <input class="input" type="password" placeholder="Password">
+                <i class="fa fa-lock"></i>
+              </p>
+              <p class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+              </p>
+              <p class="control">
+                <button class="button is-primary is-medium is-fullwidth">
+                  <i class="fa fa-user"></i>
+                  Login
+                </button>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
