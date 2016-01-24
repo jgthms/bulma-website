@@ -4,61 +4,72 @@ route: index
 ---
 
 <section class="hero is-medium">
-  {% include header.html %}
-  <div class="container">
-    <p id="b">
-      <img src="{{ site.baseurl }}/images/b.png" alt="{{ site.title }}">
-    </p>
-    <h1 class="title">
-      Bulma
-    </h1>
-    <h2 class="subtitle">
-      A <strong>modern</strong> CSS framework based on <strong>Flexbox</strong>
-    </h2>
-    <pre id="bower"><code>bower install bulma</code></pre>
-    <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
-    <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
-    <p class="hero-buttons">
-      <a class="button is-primary is-large is-flexible" href="{{ site.download }}">
-        <i class="fa fa-download"></i>
-        Download
-        <small>v0.0.1 Alpha</small>
-      </a>
-      <a class="button is-primary is-outlined is-large" href="{{ site.baseurl }}/documentation/overview/">
-        View docs
-      </a>
-    </p>
+  <div class="hero-header">
+    {% include header.html %}
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <p id="b">
+        <img src="{{ site.baseurl }}/images/b.png" alt="{{ site.title }}">
+      </p>
+      <h1 class="title">
+        Bulma
+      </h1>
+      <h2 class="subtitle">
+        A <strong>modern</strong> CSS framework based on <strong>Flexbox</strong>
+      </h2>
+      <pre id="bower"><code>bower install bulma</code></pre>
+      <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+      <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+      <p class="hero-buttons">
+        <a class="button is-primary is-large is-flexible" href="{{ site.download }}">
+          <i class="fa fa-download"></i>
+          Download
+          <small>v0.0.1 Alpha</small>
+        </a>
+        <a class="button is-primary is-outlined is-large" href="{{ site.baseurl }}/documentation/overview/">
+          View docs
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-footer">
+    <a class="button">Components</a>
   </div>
 </section>
 
 <section class="hero is-primary is-bold">
-  <div class="container">
-    <nav class="columns">
-      <div class="column is-centered">
-        <span class="icon is-large" style="margin-right: -15px;">
-          <i class="fa fa-mobile"></i>
-        </span>
-        <span class="icon is-large">
-          <i class="fa fa-tablet"></i>
-        </span>
-        <span class="icon is-large" style="margin-right: 10px;">
-          <i class="fa fa-desktop"></i>
-        </span>
-        <p class="title is-4"><strong>Responsive</strong> design</p>
-      </div>
-      <div class="column is-centered">
-        <span class="icon is-large">
-          <i class="fa fa-css3"></i>
-        </span>
-        <p class="title is-4">Built with <strong>Flexbox</strong></p>
-      </div>
-      <div class="column is-centered">
-        <span class="icon is-large">
-          <i class="fa fa-github"></i>
-        </span>
-        <p class="title is-4">Open source on <strong><a href="{{ site.github }}">GitHub</a></strong></p>
-      </div>
-    </nav>
+  <div class="hero-content">
+    <div class="container">
+      <nav class="columns">
+        <div class="column is-centered">
+          <span class="icon is-large" style="margin-right: -15px;">
+            <i class="fa fa-mobile"></i>
+          </span>
+          <span class="icon is-large">
+            <i class="fa fa-tablet"></i>
+          </span>
+          <span class="icon is-large" style="margin-right: 10px;">
+            <i class="fa fa-desktop"></i>
+          </span>
+          <p class="title is-4"><strong>Responsive</strong> design</p>
+        </div>
+        <div class="column is-centered">
+          <span class="icon is-large">
+            <i class="fa fa-css3"></i>
+          </span>
+          <p class="title is-4">Built with <strong>Flexbox</strong></p>
+        </div>
+        <div class="column is-centered">
+          <span class="icon is-large">
+            <i class="fa fa-github"></i>
+          </span>
+          <p class="title is-4">Open source on <strong><a href="{{ site.github }}">GitHub</a></strong></p>
+        </div>
+      </nav>
+    </div>
   </div>
 </section>
 
@@ -381,17 +392,19 @@ route: index
 </section>
 
 <section class="hero is-info is-medium is-bold">
-  <div class="container">
-    <p class="title">Get started</p>
-    <div class="hero-buttons">
-      <a class="button is-info is-inverted is-large"href="{{ site.baseurl }}/documentation/overview/">
-        <i class="fa fa-book"></i>
-        Check the <strong>Docs</strong>
-      </a>
-      <a class="button is-info is-inverted is-outlined is-large" href="{{ site.github }}">
-        <i class="fa fa-github"></i>
-        Contribute
-      </a>
+  <div class="hero-content">
+    <div class="container">
+      <p class="title">Get started</p>
+      <div class="hero-buttons">
+        <a class="button is-info is-inverted is-large"href="{{ site.baseurl }}/documentation/overview/">
+          <i class="fa fa-book"></i>
+          Check the <strong>Docs</strong>
+        </a>
+        <a class="button is-info is-inverted is-outlined is-large" href="{{ site.github }}">
+          <i class="fa fa-github"></i>
+          Contribute
+        </a>
+      </div>
     </div>
   </div>
 </section>
