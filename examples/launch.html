@@ -1,0 +1,39 @@
+---
+title: Launch template
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <section class="hero is-primary is-fullheight is-bold">
+      <div class="hero-video is-transparent">
+        <video src="{{ site.baseurl }}/videos/french_polynesia--matt_devir.mp4" autoplay loop muted></video>
+      </div>
+
+      <div class="hero-header">
+        <div class="container">
+          <nav class="tabs is-centered">
+            <ul>
+              <li class="is-active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="title is-1">Explore the World</h1>
+          <h2 class="subtitle is-3">Discover a new way to travel</h2>
+          <p class="control is-grouped">
+            <input class="input is-medium is-flat" type="email" placeholder="Email">
+            <button class="button is-warning is-medium">Sign up</button>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

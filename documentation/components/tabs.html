@@ -20,99 +20,93 @@ doc-subtab: tabs
     <div class="example">
       <div class="tabs">
         <ul>
-          <li class="is-active">
-            <a>One</a>
-          </li>
-          <li>
-            <a>Two</a>
-          </li>
-          <li>
-            <a>Three</a>
-          </li>
-          <li>
-            <a>Four</a>
-          </li>
-          <li>
-            <a>Five</a>
-          </li>
-          <li>
-            <a>Six</a>
-          </li>
-          <li>
-            <a>Seven</a>
-          </li>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
         </ul>
       </div>
     </div>
 {% highlight html %}
 <div class="tabs">
   <ul>
-    <li class="is-active"><a>One</a></li>
-    <li><a>Two</a></li>
-    <li><a>Three</a></li>
-    <li><a>Four</a></li>
-    <li><a>Five</a></li>
-    <li><a>Six</a></li>
-    <li><a>Seven</a></li>
+    <li class="is-active"><a>Pictures</a></li>
+    <li><a>Music</a></li>
+    <li><a>Videos</a></li>
+    <li><a>Documents</a></li>
   </ul>
 </div>
 {% endhighlight %}
 
     <hr>
 
-    <h3 class="title">Modifiers</h3>
+    <h3 class="title">Alignment</h3>
+
+    <div class="content">
+      <p>You can <strong>center</strong> the tabs, or align them to the <strong>right</strong>, by using either <code>is-centered</code> or <code>is-right</code>.</p>
+    </div>
+    <div class="example">
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="example">
+      <div class="tabs is-right">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">Icons</h3>
+
+    <div class="content">
+      <p>You can use any of the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> <strong>icons</strong>.</p>
+    </div>
+    <div class="example">
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active"><a><i class="fa fa-image"></i> Pictures</a></li>
+          <li><a><i class="fa fa-music"></i> Music</a></li>
+          <li><a><i class="fa fa-film"></i> Videos</a></li>
+          <li><a><i class="fa fa-file-text-o"></i> Documents</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">Styles</h3>
     <div class="content">
       If you want a more classic style with <strong>borders</strong>, just append the <code>is-boxed</code> modifier.
     </div>
     <div class="example">
       <div class="tabs is-boxed">
         <ul>
-          <li class="is-active">
-            <a>
-              <i class="fa fa-github"></i>
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-twitter"></i>
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-facebook"></i>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-google"></i>
-              Google
-            </a>
-          </li>
+          <li class="is-active"><a><i class="fa fa-image"></i> Pictures</a></li>
+          <li><a><i class="fa fa-music"></i> Music</a></li>
+          <li><a><i class="fa fa-film"></i> Videos</a></li>
+          <li><a><i class="fa fa-file-text-o"></i> Documents</a></li>
         </ul>
       </div>
     </div>
 {% highlight html %}
 <div class="tabs is-boxed">
   <ul>
-    <li class="is-active">
-      <a><i class="fa fa-github"></i> GitHub
-      </a>
-    </li>
-    <li>
-      <a><i class="fa fa-twitter"></i> Twitter
-    </a>
-    </li>
-    <li>
-      <a><i class="fa fa-facebook"></i> Facebook
-      </a>
-    </li>
-    <li>
-      <a><i class="fa fa-google"></i> Google
-      </a>
-    </li>
+    <li class="is-active"><a><i class="fa fa-image"></i> Pictures</a></li>
+    <li><a><i class="fa fa-music"></i> Music</a></li>
+    <li><a><i class="fa fa-film"></i> Videos</a></li>
+    <li><a><i class="fa fa-file-text-o"></i> Documents</a></li>
   </ul>
 </div>
 {% endhighlight %}
@@ -123,48 +117,20 @@ doc-subtab: tabs
     <div class="example">
       <div class="tabs is-toggle">
         <ul>
-          <li class="is-active">
-            <a>
-              <i class="fa fa-github"></i>
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-twitter"></i>
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-facebook"></i>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-google"></i>
-              Google
-            </a>
-          </li>
+          <li class="is-active"><a><i class="fa fa-image"></i> Pictures</a></li>
+          <li><a><i class="fa fa-music"></i> Music</a></li>
+          <li><a><i class="fa fa-film"></i> Videos</a></li>
+          <li><a><i class="fa fa-file-text-o"></i> Documents</a></li>
         </ul>
       </div>
     </div>
 {% highlight html %}
 <div class="tabs is-toggle">
   <ul>
-    <li class="is-active">
-      <a><i class="fa fa-github"></i> GitHub</a>
-    </li>
-    <li>
-      <a><i class="fa fa-twitter"></i> Twitter</a>
-    </li>
-    <li>
-      <a><i class="fa fa-facebook"></i> Facebook</a>
-    </li>
-    <li>
-      <a><i class="fa fa-google"></i> Google</a>
-    </li>
+    <li class="is-active"><a><i class="fa fa-image"></i> Pictures</a></li>
+    <li><a><i class="fa fa-music"></i> Music</a></li>
+    <li><a><i class="fa fa-film"></i> Videos</a></li>
+    <li><a><i class="fa fa-file-text-o"></i> Documents</a></li>
   </ul>
 </div>
 {% endhighlight %}
@@ -176,22 +142,13 @@ doc-subtab: tabs
       <div class="tabs is-fullwidth">
         <ul>
           <li>
-            <a>
-              <i class="fa fa-angle-left"></i>
-              Left
-            </a>
+            <a><i class="fa fa-angle-left"></i> Left</a>
           </li>
           <li>
-            <a>
-              <i class="fa fa-angle-up"></i>
-              Up
-            </a>
+            <a><i class="fa fa-angle-up"></i> Up</a>
           </li>
           <li>
-            <a>
-              Right
-              <i class="fa fa-angle-right"></i>
-            </a>
+            <a>Right <i class="fa fa-angle-right"></i></a>
           </li>
         </ul>
       </div>
@@ -209,6 +166,93 @@ doc-subtab: tabs
       <a>Right <i class="fa fa-angle-right"></i></a>
     </li>
   </ul>
+</div>
+{% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Combining</h3>
+    <div class="content">
+      <p>You can <strong>combine</strong> different modifiers. For example, you can <strong>centered boxed</strong> tabs, or <strong>fullwidth toggle</strong> ones.</p>
+    </div>
+
+    <div class="example">
+      <div class="tabs is-centered is-boxed">
+        <ul>
+          <li class="is-active">
+            <a><i class="fa fa-image"></i> Pictures</a>
+          </li>
+          <li>
+            <a><i class="fa fa-music"></i> Music</a>
+          </li>
+          <li>
+            <a><i class="fa fa-film"></i> Videos</a>
+          </li>
+          <li>
+            <a><i class="fa fa-file-text-o"></i> Documents</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="example">
+  <div class="tabs is-centered is-boxed">
+    <ul>
+      <li class="is-active">
+        <a><i class="fa fa-image"></i> Pictures</a>
+      </li>
+      <li>
+        <a><i class="fa fa-music"></i> Music</a>
+      </li>
+      <li>
+        <a><i class="fa fa-film"></i> Videos</a>
+      </li>
+      <li>
+        <a><i class="fa fa-file-text-o"></i> Documents</a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}
+
+    <div class="example">
+      <div class="tabs is-toggle is-fullwidth">
+        <ul>
+          <li class="is-active">
+            <a><i class="fa fa-image"></i> Pictures</a>
+          </li>
+          <li>
+            <a><i class="fa fa-music"></i> Music</a>
+          </li>
+          <li>
+            <a><i class="fa fa-film"></i> Videos</a>
+          </li>
+          <li>
+            <a><i class="fa fa-file-text-o"></i> Documents</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="example">
+  <div class="tabs is-toggle is-fullwidth">
+    <ul>
+      <li class="is-active">
+        <a><i class="fa fa-image"></i> Pictures</a>
+      </li>
+      <li>
+        <a><i class="fa fa-music"></i> Music</a>
+      </li>
+      <li>
+        <a><i class="fa fa-film"></i> Videos</a>
+      </li>
+      <li>
+        <a><i class="fa fa-file-text-o"></i> Documents</a>
+      </li>
+    </ul>
+  </div>
 </div>
 {% endhighlight %}
   </div>
