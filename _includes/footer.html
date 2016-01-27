@@ -17,5 +17,39 @@
 <script src="{{ site.baseurl }}/javascript/bulma.js"></script>
 
 {% if page.route == 'index' %}
+  <style type="text/css">
+    @media screen and (max-width: 979px) {
+      .title.is-2 .icon.is-large {
+        display: none;
+      }
+    }
+
+    .title.is-2 {
+      position: relative;
+    }
+
+    .title.is-2 a {
+      color: #222324;
+    }
+
+    .title.is-2 a:hover {
+      color: #1fc8db;
+    }
+
+    .title.is-2 .icon.is-large {
+      left: -72px;
+      position: absolute;
+      top: -1px;
+    }
+
+    .hero .title.is-2 a {
+      color: white;
+    }
+
+    .hero .title.is-2 a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
   <script type="text/javascript" src="{{ site.baseurl }}/javascript/index.js"></script>
 {% endif %}
