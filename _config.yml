@@ -10,7 +10,7 @@ download: "https://github.com/jgthms/bulma/archive/0.0.4.zip"
 version: 0.0.4
 permalink: pretty
 sass:
-  sass_dir: bower_components
+  sass_dir: node_modules
 
 # Build settings
 
