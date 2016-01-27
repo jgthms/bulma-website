@@ -24,6 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "bulma": "~0.0.3"
+    "bulma": "~0.0.4"
   }
 }
