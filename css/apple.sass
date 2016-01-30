@@ -1,0 +1,80 @@
+---
+---
+
+@charset "utf-8"
+
+@import bulma/bulma/utilities/utilities
+
+@import bulma/bulma/config/variables
+
+$grey-dark: #666
+$grey-lighter: #f2f2f2
+$blue: #08c
+$primary: $blue
+
+$family-sans-serif: "Myriad Set Pro", "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+$size-5: 20px
+$size-6: 16px
+
+$header-height: 44px
+
+@import bulma/bulma/config/generated-variables
+
+@import bulma/bulma/base/base
+@import bulma/bulma/elements/elements
+@import bulma/bulma/components/components
+@import bulma/bulma/layout/layout
+
+.header
+  background: rgba(black, 0.8)
+  a
+    color: white
+    font-weight: 300
+    transition: color $speed $easing
+    &:hover
+      color: rgba(white, 0.7)
+
+.header-menu
+  +mobile
+    background: rgba(black, 0.9)
+
+.hamburger
+  span
+    background: white
+  &:hover
+    background: rgba(white, 0.1)
+  &.is-active
+    span
+      background: white
+
+.hero-footer
+  height: 261px
+  text-align: center
+  img
+    display: inline-block
+    height: 261px
+    vertical-align: top
+    width: 347px
+
+.footer
+  a:not(.icon)
+    border-bottom-color: transparent
+    color: $primary
+    &:hover
+      color: $text-strong
+  strong
+    font-weight: normal
+  ul + p
+    margin-top: 1em
+  li
+    margin-top: 5px
+    a:not(.icon)
+      color: $text
+  .navbar
+    a
+      color: $text-strong
+  +desktop
+    font-size: 11px
+    hr
+      margin: 10px 0
