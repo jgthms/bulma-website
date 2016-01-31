@@ -1,0 +1,47 @@
+---
+---
+
+@charset "utf-8"
+
+@import bulma/bulma/utilities/utilities
+
+@import bulma/bulma/config/variables
+
+$pink: #db4086
+$primary: $pink
+
+$family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+$header-height: 100px
+
+@import bulma/bulma/config/generated-variables
+
+$body-background: white
+
+@import bulma/bulma/base/base
+@import bulma/bulma/elements/elements
+@import bulma/bulma/components/components
+@import bulma/bulma/layout/layout
+
+.header
+  background: none
+  box-shadow: none
+  .container
+    box-shadow: none
+
+.header-item img
+  max-height: 40px
+
+.iphone
+  background: url("/images/sparrow-iphone.png") no-repeat center top
+  background-size: 320px 640px
+  display: inline-block
+  height: 480px
+  overflow: hidden
+  position: relative
+  vertical-align: top
+  width: 320px
+  img
+    display: none
+    height: 640px
+    width: 320px

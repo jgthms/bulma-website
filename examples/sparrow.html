@@ -1,0 +1,68 @@
+---
+title: Sparrow template
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sparrow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/css/sparrow.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-left">
+          <a class="header-item">
+            <img src="{{ site.baseurl }}/images/sparrow.png" alt="Sparrow">
+          </a>
+          <a class="header-item">
+            <strong>Sparrow Mail</strong>
+          </a>
+        </div>
+        <span id="header-toggle" class="header-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div id="header-menu" class="header-right header-menu">
+          <span class="header-item">
+            <a href="#">Home</a>
+          </span>
+          <span class="header-item">
+            <a href="#">Features</a>
+          </span>
+          <span class="header-item">
+            <a href="#">Pricing</a>
+          </span>
+          <span class="header-item">
+            <a href="#">About</a>
+          </span>
+          <span class="header-item">
+            <a href="#">Help</a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="title is-1">Sparrow</h1>
+          <h2 class="title is-3">The last email app you'll ever need</h2>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <p class="iphone">
+          <img src="{{ site.baseurl }}/images/sparrow-iphone.png" alt="Sparrow iPhone">
+        </p>
+      </div>
+    </section>
+
+    <script src="{{ site.baseurl }}/javascript/jquery-2.2.0.min.js"></script>
+    <script src="{{ site.baseurl }}/javascript/bulma.js"></script>
+
+  </body>
+</html>
