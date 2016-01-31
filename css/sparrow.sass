@@ -3,6 +3,8 @@
 
 @charset "utf-8"
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700)
+
 @import bulma/bulma/utilities/utilities
 
 @import bulma/bulma/config/variables
@@ -12,6 +14,7 @@ $primary: $pink
 
 $family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
 
+$column-gap: 40px
 $header-height: 100px
 
 @import bulma/bulma/config/generated-variables
@@ -23,6 +26,8 @@ $body-background: white
 @import bulma/bulma/components/components
 @import bulma/bulma/layout/layout
 
+// Overrides
+
 .header
   background: none
   box-shadow: none
@@ -30,10 +35,32 @@ $body-background: white
     box-shadow: none
 
 .header-item img
-  max-height: 40px
+  +tablet
+    max-height: 40px
+
+.hero
+  &:not(:last-child)
+    &:after
+      background: rgba($border, 0.5)
+      content: ""
+      display: block
+      height: 1px
+      margin: 0 auto
+      max-width: 960px
+
+.icon
+  color: $primary
+
+.title strong
+  font-weight: 400
+
+.columns:not(:last-child)
+  margin-bottom: 80px
+
+// Unique
 
 .iphone
-  background: url("/images/sparrow-iphone.png") no-repeat center top
+  background: url("/images/sparrow/iphone.png") no-repeat center top
   background-size: 320px 640px
   display: inline-block
   height: 480px
@@ -45,3 +72,38 @@ $body-background: white
     display: none
     height: 640px
     width: 320px
+
+.badges
+  a,
+  img
+    height: 45px
+  img
+    display: block
+  a
+    display: inline-block
+    vertical-align: top
+
+.press
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  img
+    display: block
+    margin: 10px 20px
+    max-height: 60px
+    max-width: 180px
+
+#perspective
+  background: url("/images/sparrow/iphone-perspective.png") no-repeat right bottom
+  background-size: 546px 340px
+  height: 280px
+  img
+    display: block
+  +mobile
+    display: none
+
+#download
+  +tablet
+    height: 280px
+    padding: 0
