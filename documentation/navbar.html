@@ -110,15 +110,19 @@ doc-tab: navbar
 {% highlight html %}
 <!-- Main container -->
 <nav class="navbar">
-
   <!-- Left side -->
   <div class="navbar-left">
     <div class="navbar-item">
+      <p class="subtitle is-5">
+        <strong>123</strong> posts
+      </p>
+    </div>
+    <div class="navbar-item">
       <p class="control is-grouped">
-        <input class="input" type="text" placeholder="Find a repository">
-        <a class="button is-info">
+        <input class="input" type="text" placeholder="Find a post">
+        <button class="button">
           Search
-        </a>
+        </button>
       </p>
     </div>
   </div>
@@ -126,11 +130,9 @@ doc-tab: navbar
   <!-- Right side -->
   <div class="navbar-right">
     <p class="navbar-item"><strong>All</strong></p>
-    <p class="navbar-item"><a href="#">Public</a></p>
-    <p class="navbar-item"><a href="#">Private</a></p>
-    <p class="navbar-item"><a href="#">Sources</a></p>
-    <p class="navbar-item"><a href="#">Forks</a></p>
-    <p class="navbar-item"><a href="#">Mirrors</a></p>
+    <p class="navbar-item"><a href="#">Published</a></p>
+    <p class="navbar-item"><a href="#">Drafts</a></p>
+    <p class="navbar-item"><a href="#">Deleted</a></p>
     <p class="navbar-item"><a class="button is-success">New</a></p>
   </div>
 </nav>
