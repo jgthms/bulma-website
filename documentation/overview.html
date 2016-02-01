@@ -5,8 +5,8 @@ doc-tab: overview
 
 <section class="section">
   <div class="container">
-    <h1 class="title">Quick start</h1>
-    <h2 class="subtitle">Use Bulma within 2 minutes</h2>
+    <h1 class="title"><strong>3</strong> ways to start</h1>
+    <h2 class="subtitle">You only need 1 CSS file to use Bulma</h2>
 
     <hr>
 
@@ -14,18 +14,20 @@ doc-tab: overview
       <div class="media-number">1</div>
       <div class="media-content">
         <p class="title is-5">
-          <strong>Download</strong> the CSS files:<br>
-          <a href="{{ site.download }}">{{ site.download }}</a>
+          Use <strong>NPM</strong> (recommended):
         </p>
+{% highlight bash %}
+npm install bulma
+{% endhighlight %}
       </div>
     </article>
 
     <article class="media is-large">
       <div class="media-number">2</div>
       <div class="media-content">
-        <p class="title is-5"><strong>Include</strong> the file (minified or expanded) in the <code>&lt;head&gt;</code></p>
+        <p class="title is-5">Use the RawGit <strong>CDN</strong></p>
 {% highlight html %}
-<link rel="stylesheet" href="bulma.css">
+https://cdn.rawgit.com/jgthms/bulma/master/css/bulma.min.css
 {% endhighlight %}
       </div>
     </article>
@@ -33,12 +35,24 @@ doc-tab: overview
     <article class="media is-large">
       <div class="media-number">3</div>
       <div class="media-content">
-        <p class="title is-5"><em>Optional:</em> include <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> to display the icons</p>
+        <p class="title is-5">Download from the <strong>repository</strong><br>
+          <a href="https://github.com/jgthms/bulma/tree/master/css">https://github.com/jgthms/bulma/tree/master/css</a></p>
+      </div>
+    </article>
+
+    <hr>
+
+    <div class="message is-info">
+      <div class="message-header">
+        Font Awesome icons
+      </div>
+      <div class="message-body">
+        <p>If you want to use icons with Bulma, don't forget to include <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>:</p>
 {% highlight html %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 {% endhighlight %}
       </div>
-    </article>
+    </div>
 
     <hr>
 
@@ -52,11 +66,12 @@ doc-tab: overview
       <div class="media-number">1</div>
       <div class="media-content">
         <p class="title is-5">
-          <strong>Install</strong> using your command line:<br>
+          <strong>Download</strong> the source files:
+        </p>
 {% highlight bash %}
 npm install bulma
 {% endhighlight %}
-        </p>
+        <div class="content">or clone the repository: <a href="https://github.com/jgthms/bulma">https://github.com/jgthms/bulma</a></div>
       </div>
     </article>
 
