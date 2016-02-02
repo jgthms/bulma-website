@@ -19,21 +19,41 @@
         <a {% if page.route == 'index' %}class="is-active"{% endif %} href="{{ site.baseurl }}/">Home</a>
       </span>
       <span class="header-item">
-        <a {% if page.route == 'documentation' %}class="is-active"{% endif %} href="{{ site.baseurl }}/documentation/overview/">Documentation</a>
+        <a {% if page.route != 'index' %}class="is-active"{% endif %} href="{{ site.baseurl }}/documentation/overview/">Documentation</a>
       </span>
-      <span class="header-item">
-        {% if page.route == 'index' %}
-          <a class="button is-primary is-outlined" href="{{ site.github }}">
+      {% if page.route == 'index' %}
+        <span class="header-item">
+          <a id="github" class="button is-dark is-outlined" href="{{ site.github }}">
             <i class="fa fa-github"></i>
             GitHub
           </a>
-        {% else %}
+          <a id="twitter"
+          class="button"
+          data-social-network="Twitter"
+          data-social-action="tweet"
+          data-social-target="{{ site.url }}"
+          target="_blank"
+          href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=jgthms">
+            <span class="fa fa-twitter"></span>
+            Tweet
+          </a>
+        </span>
+      {% else %}
+        <span class="header-item">
           <a class="button is-info is-outlined is-inverted" href="{{ site.github }}">
             <i class="fa fa-github"></i>
             GitHub
           </a>
-        {% endif %}
-      </span>
+          <a class="button is-info is-outlined is-inverted"
+          data-social-network="Twitter"
+          data-social-action="tweet"
+          data-social-target="http://bulma.io/"
+          href="https://twitter.com/intent/tweet?text={{ 'Bulma: a modern CSS framework based on Flebox' | urlencode }}&url=http://bulma.io/&via=jgthms">
+            <span class="fa fa-twitter"></span>
+            Tweet
+          </a>
+        </span>
+      {% endif %}
     </div>
   </div>
 </header>

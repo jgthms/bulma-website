@@ -5,6 +5,29 @@
 
 @import bulma/bulma
 
+$github: #333333
+$twitter: #55acee
+
+#github
+  color: $github
+  border-color: $github
+  &:hover
+    background: $github
+    border-color: $github
+    color: white
+
+#twitter
+  color: $twitter
+  border-color: $twitter
+  &:hover
+    background: $twitter
+    border-color: $twitter
+    color: white
+
++tablet
+  .header-item .button + .button
+    margin-left: 10px
+
 #b
   border-radius: 20px
   box-shadow: 0 20px 60px rgba(black, 0.05), 0 5px 10px rgba(black, 0.1), 0 1px 1px rgba(black, 0.2)
@@ -47,6 +70,19 @@
     margin-bottom: 0
   .notification
     margin-top: 10px
+
+#social
+  align-items: center
+  display: flex
+  height: 20px
+  justify-content: center
+  a
+    display: inline-block
+    font-size: 11px
+    height: 20px
+    line-height: 20px
+  iframe:last-child
+    margin-left: 10px
 
 .example,
 .structure
