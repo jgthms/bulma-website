@@ -10,7 +10,7 @@ download: "https://github.com/jgthms/bulma/archive/0.0.10.zip"
 version: 0.0.10
 permalink: pretty
 sass:
-  sass_dir: node_modules
+  sass_dir: node_modules/bulma
 
 # Build settings
 
