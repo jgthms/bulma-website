@@ -15,6 +15,7 @@ doc-tab: grid
         <li>Add as many <code>column</code> elements as you want</li>
       </ol>
     </div>
+
     <div class="columns">
       <div class="column">
         <p class="notification is-info">First column</p>
@@ -47,7 +48,7 @@ doc-tab: grid
 </div>
 {% endhighlight %}
 
-  <hr>
+    <hr>
 
     <h3 class="title">Sizes</h3>
     <div class="content">
@@ -102,9 +103,7 @@ doc-tab: grid
       </div>
     </div>
 
-    <hr>
-
-    <h3 class="title">12 columns</h3>
+    <h4 class="title is-4">12 columns</h4>
     <div class="content">
       <p>As the grid can be divided into <strong>12</strong> columns, there are size classes for each division:</p>
       <ul>
@@ -340,5 +339,191 @@ doc-tab: grid
         <p class="notification is-warning is-centered">1</p>
       </div>
     </div>
+
+    <hr>
+
+    <h3 class="title">Responsiveness</h3>
+    <div class="content">
+      <p>By default, columns are only activated from <strong>tablet</strong> onwards. This means columns are stacked on top of each other on <strong>mobile</strong>.</p>
+      <p>If you want columns to work on <strong>mobile too</strong>, just add the <code>is-mobile</code> modifier on the <code>columns</code> container:</p>
+    </div>
+    <div class="columns is-mobile">
+      <div class="column">
+        <p class="notification is-info">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">2</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">3</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">4</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="columns is-mobile">
+  <div class="column">
+    <p class="notification is-info">1</p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">2</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">3</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">4</p>
+  </div>
+</div>
+{% endhighlight %}
+    <div class="content">
+      <p>If you <em>only</em> want columns on <strong>desktop</strong>, just use the <code>is-desktop</code> modifier on the <code>columns</code> container:</p>
+    </div>
+    <div class="columns is-desktop">
+      <div class="column">
+        <p class="notification is-info">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">2</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">3</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">4</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="columns is-desktop">
+  <div class="column">
+    <p class="notification is-info">1</p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">2</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">3</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">4</p>
+  </div>
+</div>
+{% endhighlight %}
+
+    <h4 class="title is-4">Different sizes per breakpoint</h4>
+    <div class="content">
+      <p>You can define a <strong>column size</strong> for <em>each</em> viewport size: mobile, tablet, and desktop.</p>
+    </div>
+    <div class="columns is-mobile">
+      <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
+        <p class="notification is-info">
+          <code>is-half-mobile</code><br>
+          <code>is-third-tablet</code><br>
+          <code>is-quarter-desktop</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">1</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">1</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="columns is-mobile">
+  <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
+    <p class="notification is-info">
+      <code>is-half-mobile</code><br>
+      <code>is-third-tablet</code><br>
+      <code>is-quarter-desktop</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">1</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">1</p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">1</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">1</p>
+  </div>
+</div>
+{% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Multiline</h3>
+    <div class="content">
+      <p>Whenever you want to start a new line, you can close a <code>columns</code> container and start a new one. But you can also add the <code>is-multiline</code> modifier and add <strong>more</strong> column elements that would fit in a single row.</p>
+    </div>
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-quarter">
+        <p class="notification is-info"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-success"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-warning"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-danger"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-half">
+        <p class="notification is-info"><code>is-half</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-success"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-warning"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-danger"><code>is-quarter</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-info">Auto</p>
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="columns is-multiline is-mobile">
+  <div class="column is-quarter">
+    <p class="notification is-info"><code>is-quarter</code></p>
+  </div>
+  <div class="column is-quarter">
+    <p class="notification is-success"><code>is-quarter</code></p>
+  </div>
+  <div class="column is-quarter">
+    <p class="notification is-warning"><code>is-quarter</code></p>
+  </div>
+  <div class="column is-quarter">
+    <p class="notification is-danger"><code>is-quarter</code></p>
+  </div>
+  <div class="column is-half">
+    <p class="notification is-info"><code>is-half</code></p>
+  </div>
+  <div class="column is-quarter">
+    <p class="notification is-success"><code>is-quarter</code></p>
+  </div>
+  <div class="column is-quarter">
+    <p class="notification is-warning"><code>is-quarter</code></p>
+  </div>
+  <div class="column">
+    <p class="notification is-info">Auto</p>
+  </div>
+</div>
+{% endhighlight %}
+
   </div>
 </section>
