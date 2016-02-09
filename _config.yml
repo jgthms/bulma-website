@@ -7,7 +7,7 @@ baseurl: ""
 url: "http://bulma.io"
 github: "https://github.com/jgthms/bulma"
 download: "https://github.com/jgthms/bulma/archive/0.0.10.zip"
-version: 0.0.10
+version: 0.0.11
 permalink: pretty
 sass:
   sass_dir: node_modules/bulma
