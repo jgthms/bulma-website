@@ -342,6 +342,54 @@ doc-tab: grid
 
     <hr>
 
+    <h3 class="title">Offset</h3>
+    <div class="content">
+      <p>While you can use <em>empty columns</em> (like <code>&lt;div class="column"&gt;&lt;/div&gt;</code>) to create horizontal space around <code>.column</code> elements, you can also use <strong>offset</strong> modifiers like <code>.is-offset-x</code>:
+    </div>
+
+    <div class="columns is-mobile">
+      <div class="column is-half is-offset-quarter">
+        <p class="notification is-info">
+          <code class="html">is-half</code><br>
+          <code class="html">is-offset-quarter</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-mobile">
+      <div class="column is-4 is-offset-8">
+        <p class="notification is-info">
+          <code class="html">is-4</code><br>
+          <code class="html">is-offset-8</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-mobile">
+      <div class="column is-11 is-offset-1">
+        <p class="notification is-info">
+          <code class="html">is-11</code><br>
+          <code class="html">is-offset-1</code>
+        </p>
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="columns is-mobile">
+  <div class="column is-half is-offset-quarter"></div>
+</div>
+
+<div class="columns is-mobile">
+  <div class="column is-4 is-offset-8"></div>
+</div>
+
+<div class="columns is-mobile">
+  <div class="column is-11 is-offset-1"></div>
+</div>
+{% endhighlight %}
+
+    <hr>
+
     <h3 class="title">Responsiveness</h3>
     <div class="content">
       <p>By default, columns are only activated from <strong>tablet</strong> onwards. This means columns are stacked on top of each other on <strong>mobile</strong>.</p>
@@ -363,20 +411,16 @@ doc-tab: grid
     </div>
 {% highlight html %}
 <div class="columns is-mobile">
-  <div class="column">
-    <p class="notification is-info">1</p>
-  </div>
-  <div class="column">
-    <p class="notification is-success">2</p>
-  </div>
-  <div class="column">
-    <p class="notification is-warning">3</p>
-  </div>
-  <div class="column">
-    <p class="notification is-danger">4</p>
-  </div>
+  <div class="column">1</div>
+  <div class="column">2</div>
+  <div class="column">3</div>
+  <div class="column">4</div>
 </div>
 {% endhighlight %}
+    <div class="message is-info">
+      <p class="message-header">Resize</p>
+      <p class="message-body">If you want to see the difference, resize your browser and see <em>when</em> the columns are stacked and when they are horizontally distributed.</p>
+    </div>
     <div class="content">
       <p>If you <em>only</em> want columns on <strong>desktop</strong>, just use the <code>is-desktop</code> modifier on the <code>columns</code> container:</p>
     </div>
@@ -396,18 +440,10 @@ doc-tab: grid
     </div>
 {% highlight html %}
 <div class="columns is-desktop">
-  <div class="column">
-    <p class="notification is-info">1</p>
-  </div>
-  <div class="column">
-    <p class="notification is-success">2</p>
-  </div>
-  <div class="column">
-    <p class="notification is-warning">3</p>
-  </div>
-  <div class="column">
-    <p class="notification is-danger">4</p>
-  </div>
+  <div class="column">1</div>
+  <div class="column">2</div>
+  <div class="column">3</div>
+  <div class="column">4</div>
 </div>
 {% endhighlight %}
 
@@ -436,27 +472,21 @@ doc-tab: grid
         <p class="notification is-warning">1</p>
       </div>
     </div>
+    <div class="message is-info">
+      <p class="message-header">Resize</p>
+      <p class="message-body">If you want to see these classes in action, resize your browser window and see how the same column varies in width at each breakpoint.</p>
+    </div>
 {% highlight html %}
 <div class="columns is-mobile">
   <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
-    <p class="notification is-info">
-      <code>is-half-mobile</code><br>
-      <code>is-third-tablet</code><br>
-      <code>is-quarter-desktop</code>
-    </p>
+    <code>is-half-mobile</code><br>
+    <code>is-third-tablet</code><br>
+    <code>is-quarter-desktop</code>
   </div>
-  <div class="column">
-    <p class="notification is-success">1</p>
-  </div>
-  <div class="column">
-    <p class="notification is-warning">1</p>
-  </div>
-  <div class="column">
-    <p class="notification is-success">1</p>
-  </div>
-  <div class="column">
-    <p class="notification is-warning">1</p>
-  </div>
+  <div class="column">1</div>
+  <div class="column">1</div>
+  <div class="column">1</div>
+  <div class="column">1</div>
 </div>
 {% endhighlight %}
 
@@ -499,28 +529,116 @@ doc-tab: grid
 {% highlight html %}
 <div class="columns is-multiline is-mobile">
   <div class="column is-quarter">
-    <p class="notification is-info"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column is-quarter">
-    <p class="notification is-success"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column is-quarter">
-    <p class="notification is-warning"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column is-quarter">
-    <p class="notification is-danger"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column is-half">
-    <p class="notification is-info"><code>is-half</code></p>
+    <code>is-half</code>
   </div>
   <div class="column is-quarter">
-    <p class="notification is-success"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column is-quarter">
-    <p class="notification is-warning"><code>is-quarter</code></p>
+    <code>is-quarter</code>
   </div>
   <div class="column">
-    <p class="notification is-info">Auto</p>
+    Auto
+  </div>
+</div>
+{% endhighlight %}
+    <hr>
+
+    <h3 class="title">Gapless</h3>
+    <div class="content">
+      <p>If you want to remove the <strong>space</strong> between the columns, add the <code>is-gapless</code> modifier on the <code>columns</code> container:</p>
+    </div>
+    <div class="columns is-gapless">
+      <div class="column">
+        <p class="notification is-info">First column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-success">Second column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Third column</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">Fourth column</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="columns is-gapless">
+  <div class="column">First column</div>
+  <div class="column">Second column</div>
+  <div class="column">Third column</div>
+  <div class="column">Fourth column</div>
+</div>
+{% endhighlight %}
+    <div class="content">
+      <p>You can combine it with the <code>is-multiline</code> modifier:</p>
+    </div>
+    <div class="columns is-multiline is-mobile is-gapless">
+      <div class="column is-quarter">
+        <p class="notification is-info"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-success"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-warning"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-danger"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-half">
+        <p class="notification is-info"><code>is-half</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-success"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-warning"><code>is-quarter</code></p>
+      </div>
+      <div class="column is-quarter">
+        <p class="notification is-danger"><code>is-quarter</code></p>
+      </div>
+      <div class="column">
+        <p class="notification is-info">Auto</p>
+      </div>
+    </div>
+{% highlight html %}
+<div class="columns is-gapless is-multiline is-mobile">
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column is-half">
+    <code>is-half</code>
+  </div>
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column is-quarter">
+    <code>is-quarter</code>
+  </div>
+  <div class="column">
+    Auto
   </div>
 </div>
 {% endhighlight %}
