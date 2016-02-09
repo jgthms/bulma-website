@@ -1,0 +1,44 @@
+---
+layout: default
+route: blog
+---
+
+<section class="hero is-primary is-left is-bold">
+  <div class="hero-header">
+    {% include header.html %}
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <a class="button is-primary is-inverted is-pulled-right" href="{{ site.baseurl }}/atom.xml">
+        <i class="fa fa-rss"></i>
+        Subscribe
+      </a>
+      <p class="title">
+        <a href="{{ site.baseurl }}/blog">Blog</a>
+      </p>
+      <p class="subtitle">
+        Stay updated about new features, bug fixes, and releases
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <article class="article {{ page.category | downcase }}{% if page.recommended == true %} recommended{% endif %}">
+      <p class="subtitle">
+        <a href="{{ site.baseurl }}/blog">Back</a>
+      </p>
+      <p class="subtitle is-4">
+        {{ page.date | date_to_string }}
+      </p>
+      <h1 class="title is-2">
+        {{ page.title }}
+      </h1>
+      <div class="content is-medium">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</section>

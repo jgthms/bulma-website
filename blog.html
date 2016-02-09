@@ -1,0 +1,43 @@
+---
+layout: default
+route: blog
+---
+
+<section class="hero is-primary is-left is-bold">
+  <div class="hero-header">
+    {% include header.html %}
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <a class="button is-primary is-inverted is-pulled-right" href="{{ site.baseurl }}/atom.xml">
+        <i class="fa fa-rss"></i>
+        Subscribe
+      </a>
+      <h1 class="title">
+        Blog
+      </h1>
+      <p class="subtitle">
+        Stay updated about new features, bug fixes, and releases
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% for post in site.posts %}
+      <article>
+        <p class="subtitle is-4">
+          {{ post.date | date_to_string }}
+        </p>
+        <h2 class="title is-2">
+          {{ post.title }}
+        </h2>
+        <div class="content is-medium">
+          {{ post.content }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
