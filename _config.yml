@@ -1,5 +1,4 @@
 # Site settings
-
 title: "Bulma: a modern CSS framework based on Flexbox"
 description: > # this means to ignore newlines until "baseurl:"
   Bulma is a CSS framework based on Flexbox and built with Sass
@@ -11,5 +10,4 @@ version: 0.0.14
 permalink: pretty
 
 # Build settings
-
 markdown: kramdown
