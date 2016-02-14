@@ -85,7 +85,6 @@
       color: white;
     }
   </style>
-  <script type="text/javascript" src="{{ site.baseurl }}/javascript/index.js"></script>
 {% endif %}
 
 <script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
@@ -95,3 +94,7 @@
 
 <script src="{{ site.baseurl }}/javascript/jquery-2.2.0.min.js"></script>
 <script src="{{ site.baseurl }}/javascript/bulma.js"></script>
+
+{% if page.route == 'index' %}
+  <script type="text/javascript" src="{{ site.baseurl }}/javascript/index.js"></script>
+{% endif %}
