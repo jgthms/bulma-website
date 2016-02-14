@@ -82,62 +82,62 @@ route: index
     <h4 class="subtitle is-4">Just add columns, they will resize themselves</h4>
     <div id="grid" class="columns">
       <div class="column">
-        <div class="notification is-primary is-centered">
+        <div class="notification is-primary is-text-centered">
           <p class="title">1</p>
         </div>
       </div>
       <div class="column">
-        <div class="notification is-info is-centered">
+        <div class="notification is-info is-text-centered">
           <p class="title">2</p>
         </div>
       </div>
       <div class="column">
-        <div class="notification is-success is-centered">
+        <div class="notification is-success is-text-centered">
           <p class="title">3</p>
         </div>
       </div>
       <div class="column">
-        <div class="notification is-warning is-centered">
+        <div class="notification is-warning is-text-centered">
           <p class="title">4</p>
         </div>
       </div>
       <div class="column">
-        <div class="notification is-danger is-centered">
+        <div class="notification is-danger is-text-centered">
           <p class="title">5</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-primary is-centered">
+        <div class="notification is-primary is-text-centered">
           <p class="title">6</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-info is-centered">
+        <div class="notification is-info is-text-centered">
           <p class="title">7</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-success is-centered">
+        <div class="notification is-success is-text-centered">
           <p class="title">8</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-warning is-centered">
+        <div class="notification is-warning is-text-centered">
           <p class="title">9</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-danger is-centered">
+        <div class="notification is-danger is-text-centered">
           <p class="title">10</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-primary is-centered">
+        <div class="notification is-primary is-text-centered">
           <p class="title">11</p>
         </div>
       </div>
       <div class="column" style="display: none;">
-        <div class="notification is-info is-centered">
+        <div class="notification is-info is-text-centered">
           <p class="title">12</p>
         </div>
       </div>
@@ -242,9 +242,11 @@ route: index
 
       <div class="column">
         <article id="tweet" class="media">
-          <figure class="media-image">
-            <img src="http://placehold.it/60x60">
-          </figure>
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="http://placehold.it/128x128" alt="Image">
+            </figure>
+          </div>
           <div class="media-content">
             <div class="content">
               <p>
@@ -373,9 +375,11 @@ route: index
           </figure>
           <div class="card-content">
             <div class="media">
-              <figure class="media-image is-40">
-                <img src="http://placehold.it/40x40" alt="Image">
-              </figure>
+              <div class="media-left">
+                <figure class="image is-32x32">
+                  <img src="http://placehold.it/64x64" alt="Image">
+                </figure>
+              </div>
               <div class="media-content">
                 <p class="title is-5">Card</p>
                 <p class="subtitle is-6">Subtitle</p>
@@ -452,7 +456,7 @@ route: index
 
 <section class="section is-medium">
   <div class="container">
-    <p class="title is-centered">Get started</p>
+    <p class="title is-text-centered">Get started</p>
     <div class="hero-buttons">
       <a class="button is-info is-large" href="{{ site.baseurl }}/documentation/overview/">
         <i class="fa fa-book"></i>

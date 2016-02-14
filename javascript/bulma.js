@@ -8,4 +8,15 @@ jQuery(document).ready(function ($) {
     $menu.toggleClass('is-active');
   });
 
+  $('.modal-button').click(function() {
+    var target = $(this).data('target');
+    $('html').addClass('has-modal-open');
+    $(target).addClass('is-active');
+  });
+
+  $('.modal-background, .modal-close').click(function() {
+    $('html').removeClass('has-modal-open');
+    $(this).parent().removeClass('is-active');
+  });
+
 });
