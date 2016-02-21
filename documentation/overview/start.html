@@ -1,12 +1,15 @@
 ---
 layout: documentation
 doc-tab: overview
+doc-subtab: start
 ---
+
+{% include subnav-overview.html %}
 
 <section class="section">
   <div class="container">
     <h1 class="title"><strong>3</strong> ways to start</h1>
-    <h2 class="subtitle">You only need 1 CSS file to use Bulma</h2>
+    <h2 class="subtitle">You only need <strong>1 CSS file</strong> to use Bulma</h2>
 
     <hr>
 
@@ -14,7 +17,7 @@ doc-tab: overview
       <div class="media-number">1</div>
       <div class="media-content">
         <p class="title is-5">
-          Use <strong>NPM</strong> (recommended):
+          Use <strong>NPM</strong> <em>(recommended)</em>:
         </p>
 {% highlight bash %}
 npm install bulma
@@ -25,9 +28,9 @@ npm install bulma
     <article class="media is-large">
       <div class="media-number">2</div>
       <div class="media-content">
-        <p class="title is-5">Use the RawGit <strong>CDN</strong></p>
+        <p class="title is-5">Use the <a href="https://cdnjs.com/" target="_blank">cdnjs</a> <strong>CDN</strong></p>
 {% highlight html %}
-https://cdn.rawgit.com/jgthms/bulma/master/css/bulma.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.14/css/bulma.min.css
 {% endhighlight %}
       </div>
     </article>

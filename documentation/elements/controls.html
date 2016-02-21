@@ -18,6 +18,7 @@ doc-subtab: controls
     <div class="content">
       <p>The following form controls <strong>classes</strong> are supported:</p>
       <ul>
+        <li><code>.label</code></li>
         <li><code>.input</code></li>
         <li><code>.textarea</code></li>
         <li><code>.select</code></li>
@@ -29,11 +30,13 @@ doc-subtab: controls
     </div>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-half">
         <p class="control">
+          <label class="label">Name</label>
           <input class="input" type="text" placeholder="Text input">
         </p>
         <p class="control">
+          <label class="label">Subject</label>
           <span class="select">
             <select>
               <option>Select dropdown</option>
@@ -42,6 +45,7 @@ doc-subtab: controls
           </span>
         </p>
         <p class="control">
+          <label class="label">Message</label>
           <textarea class="textarea" placeholder="Textarea"></textarea>
         </p>
         <p class="control">
@@ -65,12 +69,23 @@ doc-subtab: controls
           <button class="button">Cancel</button>
         </p>
       </div>
-      <div class="column">
+      <div class="column is-half">
 {% highlight html %}
 <p class="control">
+  <label class="label">Name</label>
   <input class="input" type="text" placeholder="Text input">
 </p>
 <p class="control">
+  <label class="label">Subject</label>
+  <span class="select">
+    <select>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+  </span>
+</p>
+<p class="control">
+  <label class="label">Message</label>
   <textarea class="textarea" placeholder="Textarea"></textarea>
 </p>
 <p class="control">
@@ -102,7 +117,7 @@ doc-subtab: controls
     <h3 class="title">Sizes</h3>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-half">
         <p class="control">
           <input class="input is-small" type="text" placeholder="Small input">
         </p>
@@ -116,7 +131,7 @@ doc-subtab: controls
           <input class="input is-large" type="text" placeholder="Large input">
         </p>
       </div>
-      <div class="column">
+      <div class="column is-half">
 {% highlight html %}
 <p class="control">
   <input class="input is-small" type="text" placeholder="Small input">
@@ -140,7 +155,7 @@ doc-subtab: controls
     <h4 class="subtitle">Loading</h4>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-half">
         <p class="control is-loading">
           <input class="input" type="text" placeholder="Loading input">
         </p>
@@ -148,7 +163,7 @@ doc-subtab: controls
           <textarea class="textarea" placeholder="Loading textarea"></textarea>
         </p>
       </div>
-      <div class="column">
+      <div class="column is-half">
 {% highlight html %}
 <p class="control is-loading">
   <input class="input" type="text" placeholder="Loading input">
@@ -163,7 +178,7 @@ doc-subtab: controls
     <h4 class="subtitle">Disabled</h4>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-half">
         <p class="control">
           <input class="input" type="text" placeholder="Disabled input" disabled>
         </p>
@@ -191,7 +206,7 @@ doc-subtab: controls
           <button class="button" disabled>Cancel</button>
         </p>
       </div>
-      <div class="column">
+      <div class="column is-half">
 {% highlight html %}
 <p class="control">
   <input class="input" type="text" placeholder="Disabled input" disabled>
@@ -226,7 +241,7 @@ doc-subtab: controls
     <h4 class="subtitle">With Font Awesome icons</h4>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-half">
         <p class="control has-icon">
           <input class="input" type="email" placeholder="Email">
           <i class="fa fa-envelope"></i>
@@ -241,7 +256,7 @@ doc-subtab: controls
           </button>
         </p>
       </div>
-      <div class="column">
+      <div class="column is-half">
 {% highlight html %}
 <p class="control has-icon">
   <input class="input" type="email" placeholder="Email">
@@ -258,6 +273,12 @@ doc-subtab: controls
 </p>
 {% endhighlight %}
       </div>
+    </div>
+
+    <hr>
+
+    <h3 class="title">Horizontal form</h3>
+    <div class="content">
     </div>
 
     <hr>
