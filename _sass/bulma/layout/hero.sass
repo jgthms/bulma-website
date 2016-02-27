@@ -46,13 +46,11 @@
     &.is-boxed
       a
         padding: 8px 15px
-  &.is-alt
-    background: $background
-    color: $text-light
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
     &.is-#{$name}
+      background: $color
       color: $color-invert
       .title
         color: $color-invert
