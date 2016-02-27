@@ -176,6 +176,21 @@ $structure-invert: $danger-invert
       justify-content: flex-start
       padding: 5px 10px
 
+.highlight
+  position: relative
+  .copy
+    +unselectable
+    background: white
+    border: solid $border
+    border-width: 0 0 1px 1px
+    color: $text-light
+    position: absolute
+    right: 0
+    top: 0
+    &:hover
+      border-color: $code
+      color: $code
+
 +tablet
   .section > .example:not(.is-fullwidth)
     margin-left: 20px

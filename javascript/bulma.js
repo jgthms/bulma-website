@@ -19,4 +19,17 @@ jQuery(document).ready(function ($) {
     $(this).parent().removeClass('is-active');
   });
 
+  var $highlights = $('.highlight');
+
+  $highlights.each(function() {
+    var $copy = '<button class="copy">Copy</button>';
+    $(this).append($copy);
+  });
+
+  new Clipboard('.copy', {
+    target: function(trigger) {
+      return trigger.previousSibling;
+    }
+  });
+
 });
