@@ -93,10 +93,17 @@
 <script src="{{ site.baseurl }}/javascript/jquery-2.2.0.min.js"></script>
 <script src="{{ site.baseurl }}/javascript/clipboard.min.js"></script>
 <script src="{{ site.baseurl }}/javascript/bulma.js"></script>
-<script type="text/javascript">
-  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
-</script>
 
 {% if page.route == 'index' %}
   <script type="text/javascript" src="{{ site.baseurl }}/javascript/index.js"></script>
 {% endif %}
+
+<script type="text/javascript">
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
