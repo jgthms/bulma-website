@@ -15,15 +15,15 @@
       <span></span>
     </span>
     <div id="header-menu" class="header-right header-menu">
-      <span class="header-item">
-        <a {% if page.route == 'index' %}class="is-active"{% endif %} href="{{ site.baseurl }}/">Home</a>
-      </span>
-      <span class="header-item">
-        <a {% if page.layout == 'documentation' %}class="is-active"{% endif %} href="{{ site.documentation }}">Documentation</a>
-      </span>
-      <span class="header-item">
-        <a {% if page.route == 'blog' %}class="is-active"{% endif %} href="{{ site.baseurl }}/blog/">Blog</a>
-      </span>
+      <a class="header-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.baseurl }}/">
+        Home
+      </a>
+      <a class="header-item {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
+        Documentation
+      </a>
+      <a class="header-item {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.baseurl }}/blog/">
+        Blog
+      </a>
       {% if page.route == 'index' %}
         <span class="header-item">
           <a id="github" class="button is-dark is-outlined" href="{{ site.github }}">

@@ -317,6 +317,36 @@ doc-subtab: form
 
     <h3 class="title">Horizontal form</h3>
     <div class="content">
+      <p>If you want a <strong>horizontal</strong> form control, use the <code>is-horizontal</code> modifier on the <code>control</code> container:</p>
+    </div>
+    <div class="control is-inline">
+      <div class="control-label">
+        <label class="label">From</label>
+      </div>
+      <div class="control-element">
+        <input class="input" type="text" placeholder="Name">
+        <input class="input" type="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="control is-inline">
+      <div class="control-label">
+        <label class="label">Subject</label>
+      </div>
+      <div class="control-element">
+        <div class="select">
+          <select>
+            <option>General enquiry</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="control is-inline">
+      <div class="control-label">
+        <label class="label">Question</label>
+      </div>
+      <div class="control-element">
+        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+      </div>
     </div>
 
     <hr>
