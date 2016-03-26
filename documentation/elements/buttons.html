@@ -38,7 +38,7 @@ doc-subtab: buttons
 
     <hr>
 
-    <p class="title">Sizes</p>
+    <h3 class="title">Sizes</h3>
 
     <div class="columns">
       <div class="column">
@@ -59,7 +59,7 @@ doc-subtab: buttons
 
     <hr>
 
-    <p class="title">Styles</p>
+    <h3 class="title">Styles</h3>
 
     <div class="columns">
       <div class="column">
@@ -84,8 +84,8 @@ doc-subtab: buttons
 
     <hr>
 
-    <p class="title">States</p>
-    <p class="subtitle">Loading</p>
+    <h3 class="title">States</h3>
+    <h4 class="subtitle">Loading</h4>
 
     <div class="columns">
       <div class="column">
@@ -108,7 +108,7 @@ doc-subtab: buttons
       </div>
     </div>
 
-    <p class="subtitle">Disabled</p>
+    <h4 class="subtitle">Disabled</h4>
 
     <div class="columns">
       <div class="column">
@@ -131,55 +131,130 @@ doc-subtab: buttons
       </div>
     </div>
 
-    <p class="subtitle">With Font Awesome icons</p>
+    <h4 class="subtitle">With Font Awesome icons</h4>
 
     <div class="columns">
       <div class="column">
-        <a class="button">
-          <i class="fa fa-github"></i>
-          GitHub
-        </a>
-        <a class="button is-primary">
-          <i class="fa fa-twitter"></i>
-          Twitter
-        </a>
-        <a class="button is-success">
-          <i class="fa fa-check"></i>
-          Save
-        </a>
-        <a class="button is-danger">
-          <i class="fa fa-times"></i>
-          Delete
-        </a>
-        <a class="button is-danger is-outlined">
-          <i class="fa fa-times"></i>
-          Delete
-        </a>
+        <p class="control">
+          <a class="button">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+            GitHub
+          </a>
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+            Twitter
+          </a>
+          <a class="button is-success">
+            <span class="icon is-small">
+              <i class="fa fa-check"></i>
+            </span>
+            Save
+          </a>
+          <a class="button is-danger is-outlined">
+            Delete
+            <span class="icon is-small">
+              <i class="fa fa-times"></i>
+            </span>
+          </a>
+        </p>
+        <p class="control">
+          <a class="button is-small">
+            <span class="icon is-small">
+              <i class="fa fa-github"></i>
+            </span>
+            GitHub
+          </a>
+          <a class="button">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+            GitHub
+          </a>
+          <a class="button is-medium">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+            GitHub
+          </a>
+          <a class="button is-large">
+            <span class="icon is-medium">
+              <i class="fa fa-github"></i>
+            </span>
+            GitHub
+          </a>
+        </p>
       </div>
       <div class="column">
 {% highlight html %}
 <a class="button">
-  <i class="fa fa-github"></i>
+  <span class="icon">
+    <i class="fa fa-github"></i>
+  </span>
   GitHub
 </a>
 <a class="button is-primary">
-  <i class="fa fa-twitter"></i>
+  <span class="icon">
+    <i class="fa fa-twitter"></i>
+  </span>
   Twitter
 </a>
 <a class="button is-success">
-  <i class="fa fa-check"></i>
+  <span class="icon">
+    <i class="fa fa-check"></i>
+  </span>
   Save
 </a>
 <a class="button is-danger">
-  <i class="fa fa-times"></i>
+  <span class="icon">
+    <i class="fa fa-times"></i>
+  </span>
   Delete
 </a>
 <a class="button is-danger is-outlined">
-  <i class="fa fa-times"></i>
+  <span class="icon">
+    <i class="fa fa-times"></i>
+  </span>
   Delete
 </a>
 {% endhighlight %}
       </div>
     </div>
+
+    <hr>
+
+    <h3 class="title">Button group</h3>
+    <div class="content">
+      <p>If you want to <strong>group</strong> buttons together, use the <code>is-grouped</code> modifier on the <code>button</code> container:</p>
+    </div>
+    <div class="example">
+      <p class="control is-grouped">
+        <a class="button is-primary">
+          Save changes
+        </a>
+        <a class="button">
+          Cancel
+        </a>
+        <a class="button is-danger">
+          Delete post
+        </a>
+      </p>
+    </div>
+{% highlight html %}
+<p class="control is-grouped">
+  <a class="button is-primary">
+    Save changes
+  </a>
+  <a class="button">
+    Cancel
+  </a>
+  <a class="button is-danger">
+    Delete post
+  </a>
+</p>
+{% endhighlight %}
   </div>
 </section>

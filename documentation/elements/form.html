@@ -315,45 +315,65 @@ doc-subtab: form
 
     <hr>
 
-    <h3 class="title">Horizontal form</h3>
+    <h3 class="title">Form addons</h3>
     <div class="content">
-      <p>If you want a <strong>horizontal</strong> form control, use the <code>is-horizontal</code> modifier on the <code>control</code> container:</p>
+      <p>If you want to <strong>attach</strong> controls together, use the <code>has-addons</code> modifier on the <code>control</code> container:</p>
     </div>
-    <div class="control is-inline">
-      <div class="control-label">
-        <label class="label">From</label>
-      </div>
-      <div class="control-element">
-        <input class="input" type="text" placeholder="Name">
-        <input class="input" type="email" placeholder="Email">
-      </div>
+    <div class="example">
+      <p class="control has-addons">
+        <input class="input" type="text" placeholder="Find a repository">
+        <a class="button is-info">
+          Search
+        </a>
+      </p>
     </div>
-    <div class="control is-inline">
-      <div class="control-label">
-        <label class="label">Subject</label>
-      </div>
-      <div class="control-element">
-        <div class="select">
+{% highlight html %}
+<p class="control has-addons">
+  <input class="input" type="text" placeholder="Find a repository">
+  <a class="button is-info">
+    Search
+  </a>
+</p>
+{% endhighlight %}
+    <div class="content">
+      <p>You can attach inputs, buttons, and dropdowns.</p>
+    </div>
+    <div class="example">
+      <p class="control has-addons">
+        <span class="select">
           <select>
-            <option>General enquiry</option>
+            <option>$</option>
+            <option>£</option>
+            <option>€</option>
           </select>
-        </div>
-      </div>
+        </span>
+        <input class="input" type="text" placeholder="Amount of money">
+        <a class="button is-success">
+          Transfer
+        </a>
+      </p>
     </div>
-    <div class="control is-inline">
-      <div class="control-label">
-        <label class="label">Question</label>
-      </div>
-      <div class="control-element">
-        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
-      </div>
-    </div>
+{% highlight html %}
+<p class="control has-addons">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
+{% endhighlight %}
 
     <hr>
 
-    <h3 class="title">Form addons</h3>
+    <h3 class="title">Form group</h3>
     <div class="content">
-      <p>If you want to <strong>attach</strong> controls together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
+      <p>If you want to <strong>group</strong> controls together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
     </div>
     <div class="example">
       <p class="control is-grouped">
@@ -371,23 +391,81 @@ doc-subtab: form
   </a>
 </p>
 {% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Horizontal form</h3>
     <div class="content">
-      <p>You can attach inputs, buttons, and dropdowns.</p>
+      <p>If you want a <strong>horizontal</strong> form control, use the <code>is-horizontal</code> modifier on the <code>control</code> container, in which you include:</p>
+      <ul>
+        <li>
+          <code>control-label</code> for the side label
+        </li>
+        <li>
+          <code>control</code> for the input/select/textarea container
+        </li>
+      </ul>
+      <p>You can of course use <code>is-grouped</code> or <code>has-addons</code> for the child elements.</p>
     </div>
-    <div class="example">
-      <p class="control is-grouped">
-        <span class="select">
+    <div class="control is-horizontal">
+      <div class="control-label">
+        <label class="label">From</label>
+      </div>
+      <div class="control is-grouped">
+        <input class="input" type="text" placeholder="Name">
+        <input class="input" type="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="control is-horizontal">
+      <div class="control-label">
+        <label class="label">Subject</label>
+      </div>
+      <div class="control">
+        <div class="select is-fullwidth">
           <select>
-            <option>$</option>
-            <option>£</option>
-            <option>€</option>
+            <option>General enquiry</option>
           </select>
-        </span>
-        <input class="input" type="text" placeholder="Amount of money">
-        <a class="button is-success">
-          Transfer
-        </a>
-      </p>
+        </div>
+      </div>
     </div>
+    <div class="control is-horizontal">
+      <div class="control-label">
+        <label class="label">Question</label>
+      </div>
+      <div class="control">
+        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+      </div>
+    </div>
+{% highlight html %}
+<div class="control is-horizontal">
+  <div class="control-label">
+    <label class="label">From</label>
+  </div>
+  <div class="control is-grouped">
+    <input class="input" type="text" placeholder="Name">
+    <input class="input" type="email" placeholder="Email">
+  </div>
+</div>
+<div class="control is-horizontal">
+  <div class="control-label">
+    <label class="label">Subject</label>
+  </div>
+  <div class="control">
+    <div class="select is-fullwidth">
+      <select>
+        <option>General enquiry</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="control is-horizontal">
+  <div class="control-label">
+    <label class="label">Question</label>
+  </div>
+  <div class="control">
+    <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+  </div>
+</div>
+{% endhighlight %}
   </div>
 </section>
