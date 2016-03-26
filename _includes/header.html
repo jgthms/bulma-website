@@ -18,7 +18,7 @@
       <a class="header-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.baseurl }}/">
         Home
       </a>
-      <a class="header-item {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
+      <a class="header-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
         Documentation
       </a>
       <a class="header-item {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.baseurl }}/blog/">
