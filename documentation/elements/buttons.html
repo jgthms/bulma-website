@@ -23,6 +23,7 @@ doc-subtab: buttons
         <button class="button is-success">Success</button>
         <button class="button is-warning">Warning</button>
         <button class="button is-danger">Danger</button>
+        <button class="button is-link">Link</button>
       </div>
       <div class="column">
 {% highlight html %}
@@ -32,6 +33,7 @@ doc-subtab: buttons
 <a class="button is-success">Success</a>
 <a class="button is-warning">Warning</a>
 <a class="button is-danger">Danger</a>
+<a class="button is-link">Link</a>
 {% endhighlight %}
       </div>
     </div>
@@ -228,7 +230,7 @@ doc-subtab: buttons
 
     <h3 class="title">Button group</h3>
     <div class="content">
-      <p>If you want to <strong>group</strong> buttons together, use the <code>is-grouped</code> modifier on the <code>button</code> container:</p>
+      <p>If you want to <strong>group</strong> buttons together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
     </div>
     <div class="example">
       <p class="control is-grouped">
@@ -256,5 +258,57 @@ doc-subtab: buttons
   </a>
 </p>
 {% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Button addons</h3>
+    <div class="content">
+      <p>If you want to use buttons as <strong>addons</strong>, use the <code>has-addons</code> modifier on the <code>control</code> container:</p>
+    </div>
+    <div class="example">
+      <p class="control has-addons">
+        <a class="button">
+          <span class="icon is-small">
+            <i class="fa fa-align-left"></i>
+          </span>
+          Left
+        </a>
+        <a class="button">
+          <span class="icon is-small">
+            <i class="fa fa-align-center"></i>
+          </span>
+          Center
+        </a>
+        <a class="button">
+          <span class="icon is-small">
+            <i class="fa fa-align-right"></i>
+          </span>
+          Right
+        </a>
+      </p>
+    </div>
+{% highlight html %}
+<p class="control has-addons">
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fa fa-align-left"></i>
+    </span>
+    Left
+  </a>
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fa fa-align-center"></i>
+    </span>
+    Center
+  </a>
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fa fa-align-right"></i>
+    </span>
+    Right
+  </a>
+</p>
+{% endhighlight %}
+
   </div>
 </section>

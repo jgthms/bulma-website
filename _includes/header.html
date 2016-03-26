@@ -27,7 +27,9 @@
       {% if page.route == 'index' %}
         <span class="header-item">
           <a id="github" class="button is-dark is-outlined" href="{{ site.github }}">
-            <i class="fa fa-github"></i>
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
             GitHub
           </a>
           <a id="twitter"
@@ -37,14 +39,18 @@
           data-social-target="{{ site.url }}"
           target="_blank"
           href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=jgthms">
-            <span class="fa fa-twitter"></span>
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
             Tweet
           </a>
         </span>
       {% else %}
         <span class="header-item">
           <a class="button is-info is-outlined is-inverted" href="{{ site.github }}">
-            <i class="fa fa-github"></i>
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
             GitHub
           </a>
           <a class="button is-info is-outlined is-inverted"
@@ -52,7 +58,9 @@
           data-social-action="tweet"
           data-social-target="http://bulma.io/"
           href="https://twitter.com/intent/tweet?text={{ 'Bulma: a modern CSS framework based on Flebox' | urlencode }}&url=http://bulma.io/&via=jgthms">
-            <span class="fa fa-twitter"></span>
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
             Tweet
           </a>
         </span>
