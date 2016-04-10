@@ -1,5 +1,35 @@
 # Bulma Changelog
 
+## 0.0.18
+
+### BREAKING
+
+* `.is-text-*` renamed to `.has-text-*`
+* removed `.is-fullwidth` helper
+
+### Added
+
+* **small tag**: `.tag.is-small`
+* 12th column classes
+* `*-full` column classes
+* `$family-code`
+
+### Fixed
+
+* disabled input with element
+* `.table` last row with `th`
+* `.card` color in `.hero`
+* `.columns.is-gapless`
+
+### Removed
+
+* removed `box-shadow` from `.tag`
+* custom checkboxes and radio buttons
+
+### Updated
+
+* `.tag` uses `display: inline-flex` now
+
 ## 0.0.17
 
 ### Added
