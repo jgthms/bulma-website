@@ -18,7 +18,7 @@
       <a class="header-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.baseurl }}/">
         Home
       </a>
-      <a class="header-item {% if page.route == 'templates' %}is-active{% endif %} {% if page.layout == 'templates' %}is-active{% endif %}" href="{{ site.baseurl }}/templates/">
+      <a class="is-hidden header-item {% if page.route == 'templates' %}is-active{% endif %} {% if page.layout == 'templates' %}is-active{% endif %}" href="{{ site.baseurl }}/templates/">
         <span>Templates</span>
         <span class="tag is-small is-success">New!</span>
       </a>

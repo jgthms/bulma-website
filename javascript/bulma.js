@@ -10,12 +10,12 @@ jQuery(document).ready(function ($) {
 
   $('.modal-button').click(function() {
     var target = $(this).data('target');
-    $('html').addClass('has-modal-open');
+    $('html').addClass('has-modal');
     $(target).addClass('is-active');
   });
 
   $('.modal-background, .modal-close').click(function() {
-    $('html').removeClass('has-modal-open');
+    $('html').removeClass('has-modal');
     $(this).parent().removeClass('is-active');
   });
 

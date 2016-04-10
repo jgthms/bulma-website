@@ -5,8 +5,7 @@
 
 @import "bulma"
 
-$github: #333333
-$twitter: #55acee
+// Override
 
 .button
   +tablet
@@ -17,6 +16,20 @@ $twitter: #55acee
       position: absolute
       top: 100%
       width: 100%
+
+body.layout-documentation.page-grid .column > .notification
+  padding-left: 0
+  padding-right: 0
+  text-align: center
+
++tablet
+  .header-item .button + .button
+    margin-left: 10px
+
+// Additional
+
+$github: #333333
+$twitter: #55acee
 
 #github
   color: $github
@@ -33,10 +46,6 @@ $twitter: #55acee
     background: $twitter
     border-color: $twitter
     color: white
-
-+tablet
-  .header-item .button + .button
-    margin-left: 10px
 
 #b
   border-radius: 20px
