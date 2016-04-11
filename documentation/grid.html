@@ -55,16 +55,48 @@ doc-tab: grid
       <p>If you want to change the <strong>size</strong> of a single column, you can use one the following classes:</p>
       <ul>
         <li>
+          <code>is-three-quarters</code>
+        </li>
+        <li>
+          <code>is-two-thirds</code>
+        </li>
+        <li>
           <code>is-half</code>
         </li>
         <li>
-          <code>is-third</code>
+          <code>is-one-third</code>
         </li>
         <li>
-          <code>is-quarter</code>
+          <code>is-one-quarter</code>
         </li>
       </ul>
       <p>The <em>other</em> columns will fill up the <strong>remaining</strong> space automatically.</p>
+    </div>
+    <div class="columns">
+      <div class="column is-three-quarters">
+        <p class="notification is-info">
+          <code class="html">is-three-quarters</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Auto</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">Auto</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <p class="notification is-info">
+          <code class="html">is-two-thirds</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="notification is-warning">Auto</p>
+      </div>
+      <div class="column">
+        <p class="notification is-danger">Auto</p>
+      </div>
     </div>
     <div class="columns">
       <div class="column is-half">
@@ -80,9 +112,9 @@ doc-tab: grid
       </div>
     </div>
     <div class="columns">
-      <div class="column is-third">
+      <div class="column is-one-third">
         <p class="notification is-info">
-          <code class="html">is-third</code>
+          <code class="html">is-one-third</code>
         </p>
       </div>
       <div class="column">
@@ -93,15 +125,85 @@ doc-tab: grid
       </div>
     </div>
     <div class="columns">
-      <div class="column is-quarter">
+      <div class="column is-one-quarter">
         <p class="notification is-info">
-          <code class="html">is-quarter</code>
+          <code class="html">is-one-quarter</code>
         </p>
       </div>
       <div class="column">
         <p class="notification is-success">Auto</p>
       </div>
     </div>
+
+{% highlight html %}
+<div class="columns">
+  <div class="column is-three-quarters">
+    <p class="notification is-info">
+      <code class="html">is-three-quarters</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">Auto</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">Auto</p>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-two-thirds">
+    <p class="notification is-info">
+      <code class="html">is-two-thirds</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">Auto</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">Auto</p>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-half">
+    <p class="notification is-info">
+      <code class="html">is-half</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">Auto</p>
+  </div>
+  <div class="column">
+    <p class="notification is-danger">Auto</p>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-one-third">
+    <p class="notification is-info">
+      <code class="html">is-one-third</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">Auto</p>
+  </div>
+  <div class="column">
+    <p class="notification is-warning">Auto</p>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-one-quarter">
+    <p class="notification is-info">
+      <code class="html">is-one-quarter</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="notification is-success">Auto</p>
+  </div>
+</div>
+{% endhighlight %}
+
 
     <h4 class="title is-4">12 columns</h4>
     <div class="content">
@@ -348,10 +450,10 @@ doc-tab: grid
     </div>
 
     <div class="columns is-mobile">
-      <div class="column is-half is-offset-quarter">
+      <div class="column is-half is-offset-one-quarter">
         <p class="notification is-info">
           <code class="html">is-half</code><br>
-          <code class="html">is-offset-quarter</code>
+          <code class="html">is-offset-one-quarter</code>
         </p>
       </div>
     </div>
@@ -376,7 +478,7 @@ doc-tab: grid
 
 {% highlight html %}
 <div class="columns is-mobile">
-  <div class="column is-half is-offset-quarter"></div>
+  <div class="column is-half is-offset-one-quarter"></div>
 </div>
 
 <div class="columns is-mobile">
@@ -452,11 +554,11 @@ doc-tab: grid
       <p>You can define a <strong>column size</strong> for <em>each</em> viewport size: mobile, tablet, and desktop.</p>
     </div>
     <div class="columns is-mobile">
-      <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
         <p class="notification is-info">
           <code>is-half-mobile</code><br>
-          <code>is-third-tablet</code><br>
-          <code>is-quarter-desktop</code>
+          <code>is-one-third-tablet</code><br>
+          <code>is-one-quarter-desktop</code>
         </p>
       </div>
       <div class="column">
@@ -478,10 +580,10 @@ doc-tab: grid
     </div>
 {% highlight html %}
 <div class="columns is-mobile">
-  <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
+  <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
     <code>is-half-mobile</code><br>
-    <code>is-third-tablet</code><br>
-    <code>is-quarter-desktop</code>
+    <code>is-one-third-tablet</code><br>
+    <code>is-one-quarter-desktop</code>
   </div>
   <div class="column">1</div>
   <div class="column">1</div>
@@ -497,29 +599,29 @@ doc-tab: grid
       <p>Whenever you want to start a new line, you can close a <code>columns</code> container and start a new one. But you can also add the <code>is-multiline</code> modifier and add <strong>more</strong> column elements that would fit in a single row.</p>
     </div>
     <div class="columns is-multiline is-mobile">
-      <div class="column is-quarter">
-        <p class="notification is-info"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-info"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-success"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-success"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-warning"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-warning"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-danger"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-danger"><code>is-one-quarter</code></p>
       </div>
       <div class="column is-half">
         <p class="notification is-info"><code>is-half</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-success"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-success"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-warning"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-warning"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-danger"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-danger"><code>is-one-quarter</code></p>
       </div>
       <div class="column">
         <p class="notification is-info">Auto</p>
@@ -528,26 +630,26 @@ doc-tab: grid
 
 {% highlight html %}
 <div class="columns is-multiline is-mobile">
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
   <div class="column is-half">
     <code>is-half</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
   <div class="column">
     Auto
@@ -586,29 +688,29 @@ doc-tab: grid
       <p>You can combine it with the <code>is-multiline</code> modifier:</p>
     </div>
     <div class="columns is-multiline is-mobile is-gapless">
-      <div class="column is-quarter">
-        <p class="notification is-info"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-info"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-success"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-success"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-warning"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-warning"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-danger"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-danger"><code>is-one-quarter</code></p>
       </div>
       <div class="column is-half">
         <p class="notification is-info"><code>is-half</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-success"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-success"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-warning"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-warning"><code>is-one-quarter</code></p>
       </div>
-      <div class="column is-quarter">
-        <p class="notification is-danger"><code>is-quarter</code></p>
+      <div class="column is-one-quarter">
+        <p class="notification is-danger"><code>is-one-quarter</code></p>
       </div>
       <div class="column">
         <p class="notification is-info">Auto</p>
@@ -616,26 +718,26 @@ doc-tab: grid
     </div>
 {% highlight html %}
 <div class="columns is-gapless is-multiline is-mobile">
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
   <div class="column is-half">
     <code>is-half</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
-  <div class="column is-quarter">
-    <code>is-quarter</code>
+  <div class="column is-one-quarter">
+    <code>is-one-quarter</code>
   </div>
   <div class="column">
     Auto

@@ -25,11 +25,11 @@ You can now apply different **column size** for each **breakpoint**.
 For example, let's say you want a column to take half the width on mobile, a third on tablet, and a quarter on desktop:
 
 <div class="columns is-mobile">
-  <div class="column is-half-mobile is-third-tablet is-quarter-desktop">
+  <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
     <p class="notification is-info">
       <code>is-half-mobile</code><br>
-      <code>is-third-tablet</code><br>
-      <code>is-quarter-desktop</code>
+      <code>is-one-third-tablet</code><br>
+      <code>is-one-quarter-desktop</code>
     </p>
   </div>
   <div class="column">
@@ -48,7 +48,7 @@ For example, let's say you want a column to take half the width on mobile, a thi
 
 {% highlight html %}
 <div class="columns is-mobile">
-  <div class="column is-half-mobile is-third-tablet is-quarter-desktop"></div>
+  <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop"></div>
   <!-- Other columns -->
 </div>
 {% endhighlight %}
@@ -69,29 +69,29 @@ By default, if you want to start a new **row**, you just need to close a `column
 But you can also add the `is-multiline` **modifier** on the `columns` container, and use **column size** modifiers (like `is-half` or `is-3`) to define size on multiple rows within the _same_ container.
 
 <div class="columns is-multiline is-mobile">
-  <div class="column is-quarter">
-    <p class="notification is-info"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-info"><code>is-one-quarter</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-success"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-success"><code>is-one-quarter</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-warning"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-warning"><code>is-one-quarter</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-danger"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-danger"><code>is-one-quarter</code></p>
   </div>
   <div class="column is-half">
     <p class="notification is-info"><code>is-half</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-success"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-success"><code>is-one-quarter</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-warning"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-warning"><code>is-one-quarter</code></p>
   </div>
-  <div class="column is-quarter">
-    <p class="notification is-danger"><code>is-quarter</code></p>
+  <div class="column is-one-quarter">
+    <p class="notification is-danger"><code>is-one-quarter</code></p>
   </div>
   <div class="column">
     <p class="notification is-info">Auto</p>
@@ -100,14 +100,14 @@ But you can also add the `is-multiline` **modifier** on the `columns` container,
 
 {% highlight html %}
 <div class="columns is-multiline is-mobile">
-  <div class="column is-quarter"></div>
-  <div class="column is-quarter"></div>
-  <div class="column is-quarter"></div>
-  <div class="column is-quarter"></div>
+  <div class="column is-one-quarter"></div>
+  <div class="column is-one-quarter"></div>
+  <div class="column is-one-quarter"></div>
+  <div class="column is-one-quarter"></div>
   <div class="column is-half"></div>
-  <div class="column is-quarter"></div>
-  <div class="column is-quarter"></div>
-  <div class="column is-quarter"></div>
+  <div class="column is-one-quarter"></div>
+  <div class="column is-one-quarter"></div>
+  <div class="column is-one-quarter"></div>
   <div class="column"></div>
 </div>
 {% endhighlight %}
