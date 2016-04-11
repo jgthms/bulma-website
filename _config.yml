@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "http://bulma.io"
 github: "https://github.com/jgthms/bulma"
-download: "https://github.com/jgthms/bulma/archive/0.0.18.zip"
-version: 0.0.18
+download: "https://github.com/jgthms/bulma/archive/0.0.19.zip"
+version: 0.0.19
 permalink: pretty
 documentation: "/documentation/overview/start/"
 
