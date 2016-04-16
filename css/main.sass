@@ -28,6 +28,39 @@ body.page-grid .column > .notification
 
 // Additional
 
+$carbon-space: 15px
+
+#carbon
+  max-width: 340px
+  min-height: 100px + ($carbon-space * 2)
+  min-width: 300px
+  padding: $carbon-space
+  +tablet
+    margin-left: auto
+    margin-right: auto
+    width: 340px
+
+#carbonads
+  text-align: left
+  a:hover
+    text-decoration: underline
+  span
+    display: block
+  .carbon-img
+    float: left
+    height: 100px
+    width: 130px
+    img
+      display: block
+  .carbon-text
+    display: block
+    color: $text-strong
+    margin-bottom: 5px
+    margin-left: 130px + $carbon-space
+  .carbon-poweredby
+    font-size: $size-small
+    margin-left: $carbon-space
+
 $github: #333333
 $twitter: #55acee
 
