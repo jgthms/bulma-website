@@ -3,26 +3,7 @@ layout: default
 route: blog
 ---
 
-<section class="hero is-primary is-left is-bold">
-  <div class="hero-header">
-    {% include header.html %}
-  </div>
-
-  <div class="hero-content">
-    <div class="container">
-      <a class="button is-primary is-inverted is-pulled-right" href="{{ site.baseurl }}/atom.xml">
-        <i class="fa fa-rss"></i>
-        Subscribe
-      </a>
-      <p class="title">
-        <a href="{{ site.baseurl }}/blog">Blog</a>
-      </p>
-      <p class="subtitle">
-        Stay updated about new features, bug fixes, and releases
-      </p>
-    </div>
-  </div>
-</section>
+{% include blog-hero.html %}
 
 <section class="section">
   <div class="container">

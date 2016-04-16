@@ -3,35 +3,7 @@ layout: default
 route: blog
 ---
 
-<section class="hero is-primary is-left is-bold">
-  <div class="hero-header">
-    {% include header.html %}
-  </div>
-
-  <div class="hero-content">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <h1 class="title">
-            Blog
-          </h1>
-          <p class="subtitle">
-            Stay updated about new features, bug fixes, and releases
-          </p>
-          <a class="button is-primary is-inverted" href="{{ site.baseurl }}/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-            <span>Subscribe</span>
-          </a>
-        </div>
-        <div class="column is-narrow">
-          {% include carbon.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include blog-hero.html %}
 
 {% for post in site.posts %}
   <section class="section">
