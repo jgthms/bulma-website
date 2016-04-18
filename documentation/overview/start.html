@@ -84,13 +84,13 @@ npm install bulma
         <p class="title is-5">
           <strong>Import</strong> all folders individually:<br>
 {% highlight sass %}
-@import bulma/utilities/utilities
-@import bulma/config/variables
-@import bulma/config/generated-variables
-@import bulma/base/base
-@import bulma/elements/elements
-@import bulma/components/components
-@import bulma/layout/layout
+@import "bulma/sass/utilities/utilities"
+@import "bulma/sass/config/variables"
+@import "bulma/sass/config/generated-variables"
+@import "bulma/sass/base/base"
+@import "bulma/sass/elements/elements"
+@import "bulma/sass/components/components"
+@import "bulma/sass/layout/layout"
 {% endhighlight %}
         </p>
       </div>
@@ -102,7 +102,7 @@ npm install bulma
         <p class="title is-5">
           <strong>Customize</strong> the Bulma variables:<br>
 {% highlight sass %}
-@import bulma/config/variables
+@import "bulma/sass/config/variables"
 
 // Override variables here
 // You can add new ones or update existing ones:
@@ -113,7 +113,7 @@ $family-serif: "Georgia", serif // Add a serif family
 
 
 
-@import bulma/config/generated-variables
+@import "bulma/sass/config/generated-variables"
 
 // Override generated variables here
 // For example, by default, the $danger color is $red and the font is sans-serif

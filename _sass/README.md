@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/bulma.svg)](https://www.npmjs.com/package/bulma)
 [![npm](https://img.shields.io/npm/dm/bulma.svg)](https://www.npmjs.com/package/bulma)
+[![Join the chat at https://gitter.im/jgthms/bulma](https://badges.gitter.im/jgthms/bulma.svg)](https://gitter.im/jgthms/bulma)
 
 Bulma is a modern CSS framework based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
@@ -13,13 +14,19 @@ Bulma is in early but active development! Try it out now:
 
 ### NPM
 
-```
+```sh
 npm install bulma
+```
+
+### Bower
+
+```sh
+bower install bulma
 ```
 
 ### CDN
 
-[https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.21/css/bulma.min.css](https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.21/css/bulma.min.css)
+[https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.22/css/bulma.min.css](https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.22/css/bulma.min.css)
 
 Feel free to raise an issue or submit a pull request.
 
