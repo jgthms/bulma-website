@@ -70,7 +70,7 @@ $twitter: #55acee
   &:hover
     background: $github
     border-color: $github
-    color: white
+    color: $white
 
 #twitter
   color: $twitter
@@ -78,11 +78,11 @@ $twitter: #55acee
   &:hover
     background: $twitter
     border-color: $twitter
-    color: white
+    color: $white
 
 #b
   border-radius: 20px
-  box-shadow: 0 20px 60px rgba(black, 0.05), 0 5px 10px rgba(black, 0.1), 0 1px 1px rgba(black, 0.2)
+  box-shadow: 0 20px 60px rgba($black, 0.05), 0 5px 10px rgba($black, 0.1), 0 1px 1px rgba($black, 0.2)
   display: inline-block
   height: 240px
   margin-bottom: 40px
@@ -112,9 +112,9 @@ $twitter: #55acee
   display: none
 
 #tweet
-  background: white
+  background: $white
   border-radius: 5px
-  box-shadow: 0 2px 3px rgba(black, 0.1), 0 0 0 1px rgba(black, 0.1)
+  box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1)
   padding: 20px
 
 #mc_embed_signup
@@ -205,7 +205,7 @@ $structure-invert: $danger-invert
   position: relative
   &:before
     +overlay
-    background: rgba(black, 0.7)
+    background: rgba($black, 0.7)
     background: $background
     border: 1px solid $border
     content: ""
@@ -232,7 +232,7 @@ $structure-invert: $danger-invert
   position: relative
   .copy
     +unselectable
-    background: white
+    background: $white
     border: solid $border
     border-width: 0 0 1px 1px
     color: $text-light

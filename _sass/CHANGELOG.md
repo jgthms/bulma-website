@@ -1,5 +1,32 @@
 # Bulma Changelog
 
+## 0.0.25
+
+* Added: `utilities/controls.sass` and `elements/form.sass`
+* Added: new responsive classes
+* Added: white/black and light/dark colors
+* Changed: `.tabs` need `.icon` now
+* Changed: cdnjs link doesn't include version
+
+## 0.0.24
+
+### Added
+
+* `is-mobile` for the navbar
+
+### Removed
+
+* removed border between sections. Use `<hr class="is-marginless">` now
+
+### Updated
+
+* restructured files
+* added back `inline-flex` for controls and tags
+
+### Removed
+
+* test tiles
+
 ## 0.0.23
 
 ### BREAKING

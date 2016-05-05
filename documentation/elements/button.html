@@ -17,13 +17,21 @@ doc-subtab: button
 
     <div class="columns">
       <div class="column">
-        <button class="button">Button</button>
-        <button class="button is-primary">Primary</button>
-        <button class="button is-info">Info</button>
-        <button class="button is-success">Success</button>
-        <button class="button is-warning">Warning</button>
-        <button class="button is-danger">Danger</button>
-        <button class="button is-link">Link</button>
+        <div class="block">
+          <button class="button">Button</button>
+          <button class="button is-white">White</button>
+          <button class="button is-light">Light</button>
+          <button class="button is-dark">Dark</button>
+          <button class="button is-black">Black</button>
+          <button class="button is-link">Link</button>
+        </div>
+        <div class="block">
+          <button class="button is-primary">Primary</button>
+          <button class="button is-info">Info</button>
+          <button class="button is-success">Success</button>
+          <button class="button is-warning">Warning</button>
+          <button class="button is-danger">Danger</button>
+        </div>
       </div>
       <div class="column">
 {% highlight html %}
@@ -62,6 +70,7 @@ doc-subtab: button
     <hr>
 
     <h3 class="title">Styles</h3>
+    <h4 class="subtitle">Outlined</h4>
 
     <div class="columns">
       <div class="column">
@@ -69,7 +78,6 @@ doc-subtab: button
         <a class="button is-primary is-outlined">Outlined</a>
         <a class="button is-info is-outlined">Outlined</a>
         <a class="button is-success is-outlined">Outlined</a>
-        <a class="button is-warning is-outlined">Outlined</a>
         <a class="button is-danger is-outlined">Outlined</a>
       </div>
       <div class="column">
@@ -78,8 +86,28 @@ doc-subtab: button
 <a class="button is-primary is-outlined">Outlined</a>
 <a class="button is-info is-outlined">Outlined</a>
 <a class="button is-success is-outlined">Outlined</a>
-<a class="button is-warning is-outlined">Outlined</a>
 <a class="button is-danger is-outlined">Outlined</a>
+{% endhighlight %}
+      </div>
+    </div>
+
+    <h4 class="subtitle">Inverted (the text color becomes the background color, and vice-versa)</h4>
+
+    <div class="columns">
+      <div class="column">
+        <div class="notification is-primary">
+          <a class="button is-primary is-inverted">Inverted</a>
+          <a class="button is-info is-inverted">Inverted</a>
+          <a class="button is-success is-inverted">Inverted</a>
+          <a class="button is-danger is-inverted">Inverted</a>
+        </div>
+      </div>
+      <div class="column">
+{% highlight html %}
+<a class="button is-primary is-inverted">Inverted</a>
+<a class="button is-info is-inverted">Inverted</a>
+<a class="button is-success is-inverted">Inverted</a>
+<a class="button is-danger is-inverted">Inverted</a>
 {% endhighlight %}
       </div>
     </div>
