@@ -18,7 +18,7 @@
 
 .button
   +control
-  +unselectable
+  @extend .unselectable
   justify-content: center
   padding-left: 10px
   padding-right: 10px
@@ -95,13 +95,11 @@
   &[disabled],
   &.is-disabled
     opacity: 0.5
-  &.is-flexible
-    height: auto
   &.is-fullwidth
     display: block
     width: 100%
   &.is-loading
-    color: transparent
+    color: transparent !important
     pointer-events: none
     &:after
       @extend .loader

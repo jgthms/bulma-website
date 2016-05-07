@@ -1,7 +1,7 @@
-<header class="header">
+<header class="nav">
   <div class="container">
-    <div class="header-left">
-      <a class="header-item" href="{{ site.baseurl }}/">
+    <div class="nav-left">
+      <a class="nav-item" href="{{ site.baseurl }}/">
         {% if page.route == 'index' %}
           <img src="{{ site.baseurl }}/images/bulma.png" alt="{{ site.title }}">
         {% else %}
@@ -9,27 +9,30 @@
         {% endif %}
       </a>
     </div>
-    <span id="header-toggle" class="header-toggle">
+
+    <span id="nav-toggle" class="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </span>
-    <div id="header-menu" class="header-right header-menu">
-      <a class="header-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.baseurl }}/">
+
+    <div id="nav-menu" class="nav-right nav-menu">
+      <a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.baseurl }}/">
         Home
       </a>
-      <a class="is-hidden header-item {% if page.route == 'templates' %}is-active{% endif %} {% if page.layout == 'templates' %}is-active{% endif %}" href="{{ site.baseurl }}/templates/">
+      <a class="is-hidden nav-item {% if page.route == 'templates' %}is-active{% endif %} {% if page.layout == 'templates' %}is-active{% endif %}" href="{{ site.baseurl }}/templates/">
         <span>Templates</span>
         <span class="tag is-small is-success">New!</span>
       </a>
-      <a class="header-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
+      <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
         Documentation
       </a>
-      <a class="header-item {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.baseurl }}/blog/">
+      <a class="nav-item {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.baseurl }}/blog/">
         Blog
       </a>
+
       {% if page.route == 'index' %}
-        <span class="header-item">
+        <span class="nav-item">
           <a id="github" class="button is-dark is-outlined" href="{{ site.github }}">
             <span class="icon">
               <i class="fa fa-github"></i>
@@ -37,12 +40,12 @@
             <span>GitHub</span>
           </a>
           <a id="twitter"
-          class="button"
-          data-social-network="Twitter"
-          data-social-action="tweet"
-          data-social-target="{{ site.url }}"
-          target="_blank"
-          href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=jgthms">
+            class="button"
+            data-social-network="Twitter"
+            data-social-action="tweet"
+            data-social-target="{{ site.url }}"
+            target="_blank"
+            href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=jgthms">
             <span class="icon">
               <i class="fa fa-twitter"></i>
             </span>
@@ -50,7 +53,7 @@
           </a>
         </span>
       {% else %}
-        <span class="header-item">
+        <span class="nav-item">
           <a class="button is-light is-outlined" href="{{ site.github }}">
             <span class="icon">
               <i class="fa fa-github"></i>
