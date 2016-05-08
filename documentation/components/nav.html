@@ -15,74 +15,186 @@ doc-subtab: nav
 
     <hr>
 
-<div class="example">
-  <nav class="nav">
-    <div class="nav-left">
-      <a class="nav-item" href="index.html">
-        <img src="{{ site.baseurl }}/images/bulma.png" alt="Logo">
-      </a>
-      <a class="nav-tab" href="#">
-        Tab
-      </a>
-      <a class="nav-tab is-active" href="#">
-        Active tab
-      </a>
+    <div class="content">
+      <p>
+        The <code>nav</code> container can have <strong>3 parts</strong>:
+      </p>
+      <ul>
+        <li><code>nav-left</code></li>
+        <li><code>nav-center</code></li>
+        <li><code>nav-right</code></li>
+      </ul>
+      <p>
+        For responsiveness, <strong>2 additional</strong> classes are available:
+      </p>
+      <ul>
+        <li><code>nav-toggle</code> for the hamburger menu on mobile</li>
+        <li><code>nav-menu</code> for menu that is collapsable on mobile (you can combine it with <code>nav-right</code>)</li>
+      </ul>
     </div>
-    <span class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <div class="nav-right nav-menu">
-      <a class="nav-item" href="#">
-        Nav item
-      </a>
-      <a class="nav-item" href="#">
-        Other nav item
-      </a>
-      <span class="nav-item">
-        <a class="button" href="#">Button</a>
-      </span>
-    </div>
-  </nav>
-</div>
 
-{% highlight html %}
+<div class="example">
 <nav class="nav">
-  <!-- Left side -->
   <div class="nav-left">
     <a class="nav-item" href="#">
-      <img src="images/bulma.png" alt="Logo">
-    </a>
-    <a class="nav-tab" href="#">
-      Tab
-    </a>
-    <a class="nav-tab is-active" href="#">
-      Active tab
+      <img src="{{ site.baseurl }}/images/bulma.png" alt="Bulma logo}">
     </a>
   </div>
 
-  <!-- Hamburger menu (on mobile) -->
+  <div class="nav-center">
+    <a class="nav-item" href="#">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="#">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+  </div>
+
   <span class="nav-toggle">
     <span></span>
     <span></span>
     <span></span>
   </span>
 
-  <!-- Right side -->
   <div class="nav-right nav-menu">
-    <a class="nav-item">
-      Nav item
+    <a class="nav-item" href="#">
+      Home
     </a>
-    <a class="nav-item">
-      Other nav item
+    <a class="nav-item" href="#">
+      Documentation
     </a>
+    <a class="nav-item" href="#">
+      Blog
+    </a>
+
     <span class="nav-item">
-      <a class="button" href="#">Button</a>
+      <a class="button" >
+        <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+        <span>Tweet</span>
+      </a>
+      <a class="button is-primary" href="#">
+        <span class="icon">
+          <i class="fa fa-download"></i>
+        </span>
+        <span>Download</span>
+      </a>
     </span>
+  </div>
+</nav>
+</div>
+
+{% highlight html %}
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item" href="#">
+      <img src="{{ site.baseurl }}/images/bulma.png" alt="Bulma logo}">
+    </a>
+  </div>
+
+  <div class="nav-center">
+    <a class="nav-item" href="#">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="#">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+  </div>
+
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <div class="nav-right nav-menu">
+    <a class="nav-item" href="#">
+      Home
+    </a>
+    <a class="nav-item" href="#">
+      Documentation
+    </a>
+    <a class="nav-item" href="#">
+      Blog
+    </a>
+
+    <span class="nav-item">
+      <a class="button" >
+        <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+        <span>Tweet</span>
+      </a>
+      <a class="button is-primary" href="#">
+        <span class="icon">
+          <i class="fa fa-download"></i>
+        </span>
+        <span>Download</span>
+      </a>
+    </span>
+  </div>
+</nav>
+
+{% endhighlight %}
+
+    <hr>
+
+    <h3 class="title">Modifiers</h3>
+
+    <div class="content">
+      <ul>
+        <li>the <code>nav</code> container can have a <strong>shadow</strong> by adding the <code>has-shadow</code> modifier</li>
+        <li>the <code>nav-item</code> can become <strong>active</strong> by adding the <code>is-active</code> modifier</li>
+        <li>the <code>nav-item</code> can become a <strong>tab</strong> by adding the <code>is-tab</code> modifier</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="example">
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item is-tab is-active">Card</a>
+      <a class="nav-item is-tab">Level</a>
+      <a class="nav-item is-tab">Media object</a>
+      <a class="nav-item is-tab">Menu</a>
+      <a class="nav-item is-tab">Message</a>
+      <a class="nav-item is-tab">Modal</a>
+      <a class="nav-item is-tab">Nav</a>
+      <a class="nav-item is-tab">Pagination</a>
+      <a class="nav-item is-tab">Panel</a>
+      <a class="nav-item is-tab">Tabs</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+{% highlight html %}
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item is-tab is-active">Card</a>
+      <a class="nav-item is-tab">Level</a>
+      <a class="nav-item is-tab">Media object</a>
+      <a class="nav-item is-tab">Menu</a>
+      <a class="nav-item is-tab">Message</a>
+      <a class="nav-item is-tab">Modal</a>
+      <a class="nav-item is-tab">Nav</a>
+      <a class="nav-item is-tab">Pagination</a>
+      <a class="nav-item is-tab">Panel</a>
+      <a class="nav-item is-tab">Tabs</a>
+    </div>
   </div>
 </nav>
 {% endhighlight %}
 
-  </div>
 </section>
