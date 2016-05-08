@@ -1,0 +1,88 @@
+---
+layout: documentation
+doc-tab: components
+doc-subtab: nav
+---
+
+{% include subnav-components.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Nav</h1>
+    <h2 class="subtitle">
+      A responsive horizontal <strong>nav bar</strong> that can contain links, tabs, buttons, icons, and a logo
+    </h2>
+
+    <hr>
+
+<div class="example">
+  <nav class="nav">
+    <div class="nav-left">
+      <a class="nav-item" href="index.html">
+        <img src="{{ site.baseurl }}/images/bulma.png" alt="Logo">
+      </a>
+      <a class="nav-tab" href="#">
+        Tab
+      </a>
+      <a class="nav-tab is-active" href="#">
+        Active tab
+      </a>
+    </div>
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+      <a class="nav-item" href="#">
+        Nav item
+      </a>
+      <a class="nav-item" href="#">
+        Other nav item
+      </a>
+      <span class="nav-item">
+        <a class="button" href="#">Button</a>
+      </span>
+    </div>
+  </nav>
+</div>
+
+{% highlight html %}
+<nav class="nav">
+  <!-- Left side -->
+  <div class="nav-left">
+    <a class="nav-item" href="#">
+      <img src="images/bulma.png" alt="Logo">
+    </a>
+    <a class="nav-tab" href="#">
+      Tab
+    </a>
+    <a class="nav-tab is-active" href="#">
+      Active tab
+    </a>
+  </div>
+
+  <!-- Hamburger menu (on mobile) -->
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- Right side -->
+  <div class="nav-right nav-menu">
+    <a class="nav-item">
+      Nav item
+    </a>
+    <a class="nav-item">
+      Other nav item
+    </a>
+    <span class="nav-item">
+      <a class="button" href="#">Button</a>
+    </span>
+  </div>
+</nav>
+{% endhighlight %}
+
+  </div>
+</section>

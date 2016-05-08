@@ -5,7 +5,9 @@ route: index
 
 <section class="hero is-medium has-text-centered">
   <div class="hero-head">
-    {% include header.html %}
+    <div class="container">
+      {% include header.html %}
+    </div>
   </div>
 
   <div class="hero-body">
@@ -267,27 +269,27 @@ route: index
 <section class="section is-medium">
   <div class="container">
     <h3 class="title is-2">
-      <a href="{{ site.baseurl }}/documentation/navbar/">
+      <a href="{{ site.baseurl }}/documentation/components/level/">
         <span class="icon is-large">
           <i class="fa fa-arrows-h"></i>
         </span>
-        Flexible <strong>navbar</strong>
+        Flexible <strong>horizontal level</strong>
       </a>
     </h3>
-    <h4 class="subtitle is-4">Include any type of element, they will remain vertically aligned</h4>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <div class="navbar-item">
+    <h4 class="subtitle is-4">Include any type of element, they will remain vertically centered</h4>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
           <p class="title is-4">
             <strong>123</strong> posts
           </p>
         </div>
-        <p class="navbar-item">
+        <p class="level-item">
           <a class="button is-success">
             New
           </a>
         </p>
-        <div class="navbar-item">
+        <div class="level-item">
           <p class="control has-addons">
             <input class="input" type="text" placeholder="Filter">
             <button class="button">
@@ -296,23 +298,23 @@ route: index
           </p>
         </div>
       </div>
-      <div class="navbar-right">
-        <div class="navbar-item">
+      <div class="level-right">
+        <div class="level-item">
           Show:
         </div>
-        <p class="navbar-item">
+        <p class="level-item">
           <strong>All</strong>
         </p>
-        <p class="navbar-item">
+        <p class="level-item">
           <a href="#">Published</a>
         </p>
-        <p class="navbar-item">
+        <p class="level-item">
           <a href="#">Drafts</a>
         </p>
-        <div class="navbar-item">
+        <div class="level-item">
           Sort:
         </div>
-        <div class="navbar-item">
+        <div class="level-item">
           <span class="select">
             <select>
               <option>Date created</option>
@@ -357,15 +359,15 @@ route: index
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                 </p>
               </div>
-              <nav class="navbar">
-                <div class="navbar-left">
-                  <a class="navbar-item">
+              <nav class="level">
+                <div class="level-left">
+                  <a class="level-item">
                     <span class="icon is-small"><i class="fa fa-reply"></i></span>
                   </a>
-                  <a class="navbar-item">
+                  <a class="level-item">
                     <span class="icon is-small"><i class="fa fa-retweet"></i></span>
                   </a>
-                  <a class="navbar-item">
+                  <a class="level-item">
                     <span class="icon is-small"><i class="fa fa-heart"></i></span>
                   </a>
                 </div>
@@ -533,10 +535,30 @@ route: index
         </p>
         <div class="tabs is-boxed">
           <ul>
-            <li class="is-active"><a><i class="fa fa-inbox"></i> Inbox</a></li>
-            <li><a><i class="fa fa-user"></i> Profile</a></li>
-            <li><a><i class="fa fa-comments-o"></i> Comments</a></li>
-            <li><a><i class="fa fa-cog"></i> Settings</a></li>
+            <li class="is-active">
+              <a>
+                <span class="icon is-small"><i class="fa fa-inbox"></i></span>
+                <span>Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-user"></i></span>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-comments-o"></i></span>
+                <span>Comments</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-cog"></i></span>
+                <span>Settings</span>
+              </a>
+            </li>
           </ul>
         </div>
         <p class="block">

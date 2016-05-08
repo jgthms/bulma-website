@@ -186,6 +186,8 @@ $twitter: #55acee
     border-radius: 0 0 $radius $radius
     border-top: none
     margin-top: -20px
+    pre
+      max-height: 600px
     &:not(:last-child)
       margin-bottom: 40px
 
@@ -230,18 +232,23 @@ $structure-invert: $danger-invert
 
 .highlight
   position: relative
-  .copy
+  .copy,
+  .expand
     @extend .unselectable
     background: $white
     border: solid $border
     border-width: 0 0 1px 1px
     color: $text-light
+    outline: none
     position: absolute
     right: 0
     top: 0
     &:hover
       border-color: $code
       color: $code
+  .expand
+    border-right-width: 1px
+    right: 50px
 
 +tablet
   .section > .example:not(.is-fullwidth)

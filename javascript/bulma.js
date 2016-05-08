@@ -27,16 +27,26 @@ jQuery(document).ready(function ($) {
   var $highlights = $('.highlight');
 
   $highlights.each(function() {
+    var $el = $(this);
     var copy = '<button class="copy">Copy</button>';
-    $(this).append(copy);
+    var expand = '<button class="expand">Expand</button>';
+    $el.append(copy);
+
+    if ($el.find('pre code').innerHeight() > 600) {
+      $el.append(expand);
+    }
   });
 
-  var $copies = $('.highlight .copy');
+  var $highlightButtons = $('.highlight .copy, .highlight .expand');
 
-  $copies.hover(function() {
+  $highlightButtons.hover(function() {
     $(this).parent().css('box-shadow', '0 0 0 1px #ed6c63');
   }, function() {
     $(this).parent().css('box-shadow', 'none');
+  });
+
+  $('.highlight .expand').click(function() {
+    $(this).parent().children('pre').css('max-height', 'none');
   });
 
   new Clipboard('.copy', {

@@ -5,7 +5,9 @@ route: documentation
 
 <section class="hero is-info is-bold">
   <div class="hero-head">
-    {% include header.html %}
+    <div class="container">
+      {% include header.html %}
+    </div>
   </div>
 
   <div class="hero-body">
@@ -27,8 +29,8 @@ route: documentation
   </div>
 
   <div class="hero-foot">
-    <nav class="tabs is-boxed">
-      <div class="container">
+    <div class="container">
+      <nav class="tabs is-boxed">
         <ul>
           <li {% if page.doc-tab == 'overview' %}class="is-active"{% endif %}>
             <a href="{{ site.documentation }}">Overview</a>
@@ -38,9 +40,6 @@ route: documentation
           </li>
           <li {% if page.doc-tab == 'grid' %}class="is-active"{% endif %}>
             <a href="{{ site.baseurl }}/documentation/grid/columns">Grid</a>
-          </li>
-          <li {% if page.doc-tab == 'navbar' %}class="is-active"{% endif %}>
-            <a href="{{ site.baseurl }}/documentation/navbar/">Navbar</a>
           </li>
           <li {% if page.doc-tab == 'elements' %}class="is-active"{% endif %}>
             <a href="{{ site.baseurl }}/documentation/elements/box/">Elements</a>
@@ -53,8 +52,8 @@ route: documentation
           </li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </section>
 
 {{ content }}
