@@ -9,15 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "node-sass": "^3.7.0",
-    "postcss-cli": "^2.5.2"
+    "autoprefixer": "^6.3.3",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1"
   },
   "scripts": {
     "autoprefix": "postcss --use autoprefixer --output bulma-website.css bulma-website.css",
     "build": "npm run clean && npm run build-sass && npm run autoprefix",
     "build-sass": "node-sass --output-style compressed bulma-website.sass bulma-website.css",
-    "watch-sass": "node-sass --output-style compressed --watch bulma-website.sass bulma-website.css",
     "clean": "rm bulma-website.css"
   }
 }

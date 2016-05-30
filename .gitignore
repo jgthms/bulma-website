@@ -4,3 +4,7 @@ _site
 _config.local.yml
 /bulma
 npm-debug.log
+bulma-website-local.sass
+/css
+/_sass
+/styles/node_modules

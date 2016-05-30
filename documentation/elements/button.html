@@ -138,16 +138,39 @@ doc-subtab: button
       </div>
     </div>
 
+    <h4 class="subtitle">Active</h4>
+
+    <div class="columns">
+      <div class="column">
+        <a class="button is-active">Active</a>
+        <a class="button is-primary is-active">Active</a>
+        <a class="button is-info is-active">Active</a>
+        <a class="button is-success is-active">Active</a>
+        <a class="button is-warning is-active">Active</a>
+        <a class="button is-danger is-active">Active</a>
+      </div>
+      <div class="column">
+{% highlight html %}
+<a class="button is-active">Active</a>
+<a class="button is-primary is-active">Active</a>
+<a class="button is-info is-active">Active</a>
+<a class="button is-success is-active">Active</a>
+<a class="button is-warning is-active">Active</a>
+<a class="button is-danger is-active">Active</a>
+{% endhighlight %}
+      </div>
+    </div>
+
     <h4 class="subtitle">Disabled</h4>
 
     <div class="columns">
       <div class="column">
-        <a class="button is-disabled" disabled>Disabled</a>
-        <a class="button is-primary is-disabled" disabled>Disabled</a>
-        <a class="button is-info is-disabled" disabled>Disabled</a>
-        <a class="button is-success is-disabled" disabled>Disabled</a>
-        <a class="button is-warning is-disabled" disabled>Disabled</a>
-        <a class="button is-danger is-disabled" disabled>Disabled</a>
+        <a class="button is-disabled">Disabled</a>
+        <a class="button is-primary is-disabled">Disabled</a>
+        <a class="button is-info is-disabled">Disabled</a>
+        <a class="button is-success is-disabled">Disabled</a>
+        <a class="button is-warning is-disabled">Disabled</a>
+        <a class="button is-danger is-disabled">Disabled</a>
       </div>
       <div class="column">
 {% highlight html %}
@@ -261,30 +284,42 @@ doc-subtab: button
       <p>If you want to <strong>group</strong> buttons together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
     </div>
     <div class="example">
-      <p class="control is-grouped">
-        <a class="button is-primary">
-          Save changes
-        </a>
-        <a class="button">
-          Cancel
-        </a>
-        <a class="button is-danger">
-          Delete post
-        </a>
-      </p>
+      <div class="control is-grouped">
+        <p class="control">
+          <a class="button is-primary">
+            Save changes
+          </a>
+        </p>
+        <p class="control">
+          <a class="button">
+            Cancel
+          </a>
+        </p>
+        <p class="control">
+          <a class="button is-danger">
+            Delete post
+          </a>
+        </p>
+      </div>
     </div>
 {% highlight html %}
-<p class="control is-grouped">
-  <a class="button is-primary">
-    Save changes
-  </a>
-  <a class="button">
-    Cancel
-  </a>
-  <a class="button is-danger">
-    Delete post
-  </a>
-</p>
+<div class="control is-grouped">
+  <p class="control">
+    <a class="button is-primary">
+      Save changes
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      Cancel
+    </a>
+  </p>
+  <p class="control">
+    <a class="button is-danger">
+      Delete post
+    </a>
+  </p>
+</div>
 {% endhighlight %}
 
     <hr>

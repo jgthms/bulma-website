@@ -196,6 +196,38 @@ doc-subtab: form
         <p class="control">
           <input class="input is-large" type="text" placeholder="Large input">
         </p>
+        <p class="control">
+          <span class="select is-small">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+        </p>
+        <p class="control">
+          <span class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+        </p>
+        <p class="control">
+          <span class="select is-medium">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+        </p>
+        <p class="control">
+          <span class="select is-large">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+        </p>
       </div>
       <div class="column is-half">
 {% highlight html %}
@@ -434,25 +466,89 @@ doc-subtab: form
 </p>
 {% endhighlight %}
     <div class="content">
-      <p>You can attach inputs, buttons, and dropdowns.</p>
+      <p>You can attach inputs, buttons, and dropdowns <strong>only</strong>.</p>
+      <p>Use the <code>is-expanded</code> modifier on the element you want to fill up the remaing space (in this case, the input):</p>
     </div>
     <div class="example">
-      <p class="control has-addons">
-        <span class="select">
-          <select>
-            <option>$</option>
-            <option>£</option>
-            <option>€</option>
-          </select>
-        </span>
-        <input class="input" type="text" placeholder="Amount of money">
-        <a class="button is-success">
-          Transfer
-        </a>
-      </p>
+<p class="control has-addons">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input is-expanded" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
     </div>
 {% highlight html %}
 <p class="control has-addons">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input is-expanded" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
+{% endhighlight %}
+    <div class="content">
+      <p>Use the <code>has-addons-centered</code> or the <code>has-addons-right</code> modifers to alter the <strong>alignment</strong>.</p>
+    </div>
+<div class="example">
+<p class="control has-addons has-addons-centered">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
+</div>
+{% highlight html %}
+<p class="control has-addons has-addons-centered">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
+{% endhighlight %}
+<div class="example">
+<p class="control has-addons has-addons-right">
+  <span class="select">
+    <select>
+      <option>$</option>
+      <option>£</option>
+      <option>€</option>
+    </select>
+  </span>
+  <input class="input" type="text" placeholder="Amount of money">
+  <a class="button is-success">
+    Transfer
+  </a>
+</p>
+</div>
+{% highlight html %}
+<p class="control has-addons has-addons-right">
   <span class="select">
     <select>
       <option>$</option>
@@ -474,21 +570,32 @@ doc-subtab: form
       <p>If you want to <strong>group</strong> controls together, use the <code>is-grouped</code> modifier on the <code>control</code> container:</p>
     </div>
     <div class="example">
-      <p class="control is-grouped">
-        <input class="input" type="text" placeholder="Find a repository">
-        <a class="button is-info">
-          Search
-        </a>
-      </p>
+<div class="control is-grouped">
+  <p class="control is-expanded">
+    <input class="input" type="text" placeholder="Find a repository">
+  </p>
+  <p class="control">
+    <a class="button is-info">
+      Search
+    </a>
+  </p>
+</div>
     </div>
 {% highlight html %}
-<p class="control is-grouped">
-  <input class="input" type="text" placeholder="Find a repository">
-  <a class="button is-info">
-    Search
-  </a>
-</p>
+<div class="control is-grouped">
+  <p class="control is-expanded">
+    <input class="input" type="text" placeholder="Find a repository">
+  </p>
+  <p class="control">
+    <a class="button is-info">
+      Search
+    </a>
+  </p>
+</div>
 {% endhighlight %}
+    <div class="content">
+      <p>Add the <code>is-expanded</code> modifier on the control element you want to <strong>fill up the remaining space</strong>.</p>
+    </div>
 
     <hr>
 
@@ -510,8 +617,12 @@ doc-subtab: form
         <label class="label">From</label>
       </div>
       <div class="control is-grouped">
-        <input class="input" type="text" placeholder="Name">
-        <input class="input" type="email" placeholder="Email">
+        <p class="control is-expanded">
+          <input class="input" type="text" placeholder="Name">
+        </p>
+        <p class="control is-expanded">
+          <input class="input" type="email" placeholder="Email">
+        </p>
       </div>
     </div>
     <div class="control is-horizontal">
@@ -540,8 +651,12 @@ doc-subtab: form
     <label class="label">From</label>
   </div>
   <div class="control is-grouped">
-    <input class="input" type="text" placeholder="Name">
-    <input class="input" type="email" placeholder="Email">
+    <p class="control is-expanded">
+      <input class="input" type="text" placeholder="Name">
+    </p>
+    <p class="control is-expanded">
+      <input class="input" type="email" placeholder="Email">
+    </p>
   </div>
 </div>
 <div class="control is-horizontal">
