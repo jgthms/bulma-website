@@ -1,0 +1,23 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bulma-website.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2"
+  },
+  "scripts": {
+    "autoprefix": "postcss --use autoprefixer --output bulma-website.css bulma-website.css",
+    "build": "npm run clean && npm run build-sass && npm run autoprefix",
+    "build-sass": "node-sass --output-style compressed bulma-website.sass bulma-website.css",
+    "watch-sass": "node-sass --output-style compressed --watch bulma-website.sass bulma-website.css",
+    "clean": "rm bulma-website.css"
+  }
+}

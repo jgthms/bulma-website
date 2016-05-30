@@ -3,3 +3,4 @@ _site
 .DS_Store
 _config.local.yml
 /bulma
+npm-debug.log
