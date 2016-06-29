@@ -16,7 +16,7 @@
   "scripts": {
     "autoprefix": "postcss --use autoprefixer --output bulma-website.css bulma-website.css",
     "build": "npm run clean && npm run build-sass && npm run autoprefix",
-    "build-sass": "node-sass --output-style compressed bulma-website.sass bulma-website.css",
+    "build-sass": "node-sass --output-style expanded bulma-website.sass bulma-website.css",
     "clean": "rm bulma-website.css"
   }
 }
