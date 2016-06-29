@@ -7,8 +7,8 @@ baseurl: ""
 cssurl: "/styles/bulma-website.css"
 url: "http://bulma.io"
 github: "https://github.com/jgthms/bulma"
-download: "https://github.com/jgthms/bulma/archive/0.0.28.zip"
-version: 0.0.28
+download: "https://github.com/jgthms/bulma/archive/0.1.0.zip"
+version: 0.1.0
 permalink: pretty
 documentation: "/documentation/overview/start/"
 
