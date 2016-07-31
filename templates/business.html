@@ -7,13 +7,13 @@
     <title>Business - Free Bulma template</title>
     <meta name="description" content="Free HTML template with all Bulma elements">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/bulma-website.css">
+    <link rel="stylesheet" type="text/css" href="/styles/bulma-website.local.css">
   </head>
   <body>
-    <nav class="nav">
+    <!-- <nav class="nav">
       <div class="container">
         <div class="nav-left">
-          <a class="nav-item">
+          <a class="nav-item is-brand">
             <img src="/images/bulma.png" alt="Description">
           </a>
         </div>
@@ -45,9 +45,47 @@
           </span>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
-    <section class="hero is-medium">
+    <section class="hero is-light is-large">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="nav">
+              <div class="nav-left">
+                <a class="nav-item is-brand">
+                  <img src="/images/bulma.png" alt="Description">
+                </a>
+              </div>
+              <span class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <div class="nav-right nav-menu">
+                <a class="nav-item">
+                  Home
+                </a>
+                <a class="nav-item">
+                  Features
+                </a>
+                <a class="nav-item">
+                  Team
+                </a>
+                <a class="nav-item">
+                  Help
+                </a>
+                <span class="nav-item">
+                  <a class="button">
+                    Log in
+                  </a>
+                  <a class="button is-info">
+                    Sign up
+                  </a>
+                </span>
+              </div>
+          </nav>
+        </div>
+      </div>
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
@@ -58,14 +96,18 @@
               <h2 class="subtitle is-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus turpis. Proin ut eleifend ligula. Cras euismod erat ullamcorper, condimentum tortor eget, gravida lacus.
               </h2>
-              <p class="control is-grouped">
-                <a class="button is-large is-info">
-                  Get started
-                </a>
-                <a class="button is-large">
-                  Learn more
-                </a>
-              </p>
+              <div class="control is-grouped">
+                <p class="control">
+                  <a class="button is-large is-info">
+                    Get started
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-large">
+                    Learn more
+                  </a>
+                </p>
+              </div>
             </div>
             <div class="column is-5 is-offset-1">
               <figure class="image is-4by3">
@@ -107,6 +149,93 @@
               </p>
               <h3 class="title">Secure</h3>
               <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus turpis. Proin ut eleifend ligula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <h1 class="title is-2">
+              Scale
+            </h1>
+            <h2 class="subtitle is-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus turpis. Proin ut eleifend ligula. Cras euismod erat ullamcorper, condimentum tortor eget, gravida lacus.
+            </h2>
+          </div>
+          <div class="column is-5 is-offset-1">
+            <figure class="image is-4by3">
+              <img src="http://placehold.it/800x600" alt="Description">
+            </figure>
+          </div>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image is-4by3">
+              <img src="http://placehold.it/800x600" alt="Description">
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-1">
+            <h1 class="title is-2">
+              Scale
+            </h1>
+            <h2 class="subtitle is-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus turpis. Proin ut eleifend ligula. Cras euismod erat ullamcorper, condimentum tortor eget, gravida lacus.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h3 class="title">Get in touch</h3>
+          <div class="columns">
+            <div class="column is-half">
+              <label class="label">Name</label>
+              <p class="control">
+                <input class="input" type="text">
+              </p>
+              <label class="label">Email</label>
+              <p class="control">
+                <input class="input" type="email">
+              </p>
+              <label class="label">Message</label>
+              <p class="control">
+                <textarea class="textarea"></textarea>
+              </p>
+              <p class="control">
+                <button class="button is-info">Send message</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <article class="block">
+                <strong>Are volume discounts available?</strong>
+                <p class="content">We offer customized pricing for larger businesses. If you accept more than £30,000 per month, get in touch</p>
+              </article>
+              <article class="block">
+                <strong>Are volume discounts available?</strong>
+                <p class="content">We offer customized pricing for larger businesses. If you accept more than £30,000 per month, get in touch</p>
+              </article>
+            </div>
+            <div class="column">
+              <article class="block">
+                <strong>Are volume discounts available?</strong>
+                <p class="content">We offer customized pricing for larger businesses. If you accept more than £30,000 per month, get in touch</p>
+              </article>
             </div>
           </div>
         </div>

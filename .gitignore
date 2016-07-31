@@ -1,10 +1,10 @@
-_site
-.sass-cache
 .DS_Store
-_config.local.yml
-/bulma
-npm-debug.log
-bulma-website-local.sass
-/css
+.sass-cache
 /_sass
+/bulma
+/css
 /styles/node_modules
+_config.local.yml
+_site
+bulma-website-local.sass
+npm-debug.log

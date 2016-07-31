@@ -22,9 +22,11 @@ route: index
         A <strong>modern</strong> CSS framework based on <strong>Flexbox</strong>
       </h2>
       <pre id="npm"><code>npm install bulma</code></pre>
+      <div class="block">
+        <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+      </div>
       {% include carbon.html %}
-      <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
-      <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
       <p class="hero-buttons">
         <a class="button is-primary is-large" href="{{ site.download }}">
           <span class="icon">
@@ -41,7 +43,7 @@ route: index
   </div>
 </section>
 
-<section class="hero is-primary is-bold">
+<section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <nav class="columns">
@@ -380,7 +382,7 @@ route: index
   </div>
 </section>
 
-<section class="hero is-fullheight is-primary is-bold">
+<section class="hero is-fullheight is-primary">
   <div class="hero-head">
     <div class="container">
       <div class="tabs is-centered">
@@ -394,10 +396,10 @@ route: index
   <div class="hero-body">
     <div class="container has-text-centered">
       <h3 class="title is-2">
+        <span class="icon is-large">
+          <i class="fa fa-arrows-v"></i>
+        </span>
         <a href="{{ site.baseurl }}/documentation/layout/hero/">
-          <span class="icon is-large">
-            <i class="fa fa-arrows-v"></i>
-          </span>
           Easy <strong>vertical centering</strong> in <strong>fullscreen</strong>
         </a>
       </h3>
@@ -506,14 +508,18 @@ route: index
       <div class="column">
         <p class="title">Title</p>
         <p class="subtitle">Subtitle</p>
-        <p class="control is-grouped">
-          <span class="select">
-            <select>
-              <option>Dropdown</option>
-            </select>
-          </span>
-          <input class="input" type="text" placeholder="Text input">
-        </p>
+        <div class="control is-grouped">
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>Dropdown</option>
+              </select>
+            </span>
+          </p>
+          <p class="control is-expanded">
+            <input class="input" type="text" placeholder="Text input">
+          </p>
+        </div>
         <p class="control">
           <label class="checkbox">
             <input type="checkbox">
